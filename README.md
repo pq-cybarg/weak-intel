@@ -1,10 +1,13 @@
-# Weak.Intel — a dual-use map of the cyber / operator landscape
+# weak.intel — a dual-use map of the cyber / operator landscape
 
 The earnings-bubble analogue for cryptography, APTs, crime, protectors, intelligence
 facilities, malware classes, blue-team controls, and cryptographically relevant
 quantum computers.
 
-Companion to [bubble-map](https://github.com/pq-cybarg/bubble-map) (the capital/power graph). Nested live at https://pq-cybarg.github.io/bubble-map/threatintel/ when that tab is published.
+This repo **is** weak.intel. Nested under bubble-map it keeps that subname and
+lives at **https://pq-cybarg.github.io/bubble-map/weak.intel/** (site path
+`bubble-map/weak.intel`). Source: [pq-cybarg/weak-intel](https://github.com/pq-cybarg/weak-intel).
+Parent capital/power graph: [pq-cybarg/bubble-map](https://github.com/pq-cybarg/bubble-map).
 
 **Start here:** [`report/UNMASKING.md`](report/UNMASKING.md)
 
@@ -40,6 +43,12 @@ After `bash run_all.sh`:
 - `docs/dashboard.html` — dual-use, recurring targets, CRQC split, accountability sinks
 - `docs/globe.html` — public facilities
 - `docs/methodology.html` — honesty rules
+
+## Nested under bubble-map
+bubble-map submodules this repo at `weak.intel/` and copies `docs/` to
+`docs/weak.intel/` so GitHub Pages serves it as `/bubble-map/weak.intel/`.
+The nested tab and pages call themselves **weak.intel**. Attack-layer proofs
+stay in this repo; they are not mixed into bubble-map's financial SCC.
 
 ## Ideas taken from bubble-map
 CALEA backdoor paradox, HNDL + **TNFL**, Shadow Brokers boomerang, weaponize-the-guard
