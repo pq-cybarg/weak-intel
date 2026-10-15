@@ -1,0 +1,76 @@
+{
+  "as_of": "2026-09-05",
+  "metadata": {
+    "title": "Mercenary spyware, hack-for-hire, and the forensics that expose them",
+    "layer": "evidenced",
+    "theme": "intel"
+  },
+  "notes": "Ported/expanded from bubble-map #239 spyware + Citizen Lab deep-dive. Citizen Lab is the counter-force: independent forensics that convert covert operations into sanctions and litigation.",
+  "entities": [
+    {
+      "name": "Gamma_Group",
+      "type": "vendor",
+      "notes": "Gamma International (UK/Germany); FinFisher GmbH, Munich. Built the FinFisher/FinSpy 'lawful intercept' suite - full-device implants. FinFisher GmbH filed for insolvency 2022 after German export-law prosecution.",
+      "capability_tier": "industrial",
+      "source": ["https://citizenlab.ca/2013/03/you-only-click-twice-finfishers-global-proliferation-2/"]
+    },
+    {
+      "name": "FinSpy",
+      "type": "malware",
+      "notes": "Gamma's modular implant (calls, messages, mic/camera, files). Amnesty (Sep 2020) found new variants targeting Egyptian civil society and first publicly revealed FinSpy for macOS and Linux alongside Windows/Android.",
+      "capability_tier": "industrial",
+      "source": ["https://www.amnesty.org/en/latest/research/2020/09/german-made-finspy-spyware-found-in-egypt/"]
+    },
+    {
+      "name": "Hacking_Team",
+      "type": "vendor",
+      "notes": "Milan; 'Remote Control System' / Galileo, sold to abusive governments. Itself hacked in 2015 (400GB dump) confirming client lists incl. Sudan/Ethiopia. Wound down / reformed as Memento Labs.",
+      "capability_tier": "industrial",
+      "source": ["https://citizenlab.ca/2015/07/hacking-team-leak-highlights-citizen-lab-research/"]
+    },
+    {
+      "name": "Candiru",
+      "type": "vendor",
+      "notes": "Tel Aviv (aka Sourgum). 'DevilsTongue' Windows spyware used against civil society across multiple countries. Added to US Commerce Entity List (2021) alongside NSO.",
+      "capability_tier": "industrial",
+      "source": ["https://citizenlab.ca/2021/07/hooking-candiru-another-mercenary-spyware-vendor-comes-into-focus/"]
+    },
+    {
+      "name": "Hack_For_Hire",
+      "type": "capability",
+      "notes": "The mercenary phishing/hack-for-hire market. 'Dark Basin' (Citizen Lab, 2020) tied an operation targeting thousands (climate advocates, journalists) to India-based BellTroX - distinct from implant vendors but same clientele.",
+      "capability_tier": "commercial",
+      "source": ["https://citizenlab.ca/2020/06/dark-basin-uncovering-a-massive-hack-for-hire-operation/"]
+    },
+    {
+      "name": "Apple",
+      "type": "vendor",
+      "notes": "Sued NSO (2021) after FORCEDENTRY and shipped Lockdown Mode; later moved to dismiss (2024) to protect threat-intel methods. Platform defender with dual incentives.",
+      "source": ["https://www.apple.com/newsroom/2021/11/apple-sues-nso-group-to-curb-the-abuse-of-state-sponsored-spyware/"]
+    },
+    {
+      "name": "Meta",
+      "type": "vendor",
+      "notes": "Meta/WhatsApp's 2019 suit over a zero-click (1,400 targets) produced a 2025 US jury verdict against NSO (~$167M punitive, later adjusted) - the first major courtroom loss for a spyware vendor.",
+      "source": ["https://about.fb.com/news/2019/10/protecting-our-users-from-a-cyber-attack/"]
+    }
+  ],
+  "edges": [
+    {"from": "Gamma_Group", "to": "FinSpy", "kind": "uses", "instrument": "develops/sells the implant", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://citizenlab.ca/2013/03/you-only-click-twice-finfishers-global-proliferation-2/"]},
+    {"from": "FinSpy", "to": "Mobile_Spyware", "kind": "affiliates", "instrument": "legal-spyware branch of implant class", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.amnesty.org/en/latest/research/2020/09/german-made-finspy-spyware-found-in-egypt/"]},
+    {"from": "Gamma_Group", "to": "Commercial_Spyware_Market", "kind": "affiliates", "instrument": "vendor in the mercenary market", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://citizenlab.ca/2013/03/you-only-click-twice-finfishers-global-proliferation-2/"]},
+    {"from": "Hacking_Team", "to": "Commercial_Spyware_Market", "kind": "affiliates", "instrument": "RCS/Galileo vendor", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://citizenlab.ca/2015/07/hacking-team-leak-highlights-citizen-lab-research/"]},
+    {"from": "Candiru", "to": "Commercial_Spyware_Market", "kind": "affiliates", "instrument": "DevilsTongue vendor; Entity List", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://citizenlab.ca/2021/07/hooking-candiru-another-mercenary-spyware-vendor-comes-into-focus/"]},
+    {"from": "Commercial_Spyware_Market", "to": "dual_use_door", "kind": "dual_use", "instrument": "Wassenaar/EU dual-use controls vs enforcement gap", "confidence": "high", "status": "public-record", "grade": "strong", "notes": "Spyware is dual-use on paper yet repeatedly reaches abusive governments - the export-licensing-vs-enforcement gap.", "source": ["https://www.wassenaar.org/"]},
+    {"from": "Citizen_Lab", "to": "Commercial_Spyware_Market", "kind": "protects", "instrument": "independent forensic exposure", "confidence": "high", "status": "public-record", "grade": "strong", "notes": "The dominant independent exposer; its reports turned 'lawful intercept' vendors into sanctioned, litigated entities.", "source": ["https://citizenlab.ca/"]},
+    {"from": "Citizen_Lab", "to": "NSO_Group", "kind": "protects", "instrument": "Million Dollar Dissident (2016), FORCEDENTRY (2021)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://citizenlab.ca/2016/08/million-dollar-dissident-iphone-zero-day-nso-group-uae/"]},
+    {"from": "Citizen_Lab", "to": "Gamma_Group", "kind": "protects", "instrument": "FinFisher C2 mapping across dozens of countries", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://citizenlab.ca/2013/03/you-only-click-twice-finfishers-global-proliferation-2/"]},
+    {"from": "Citizen_Lab", "to": "Hacking_Team", "kind": "protects", "instrument": "RCS exposure", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://citizenlab.ca/2015/07/hacking-team-leak-highlights-citizen-lab-research/"]},
+    {"from": "Citizen_Lab", "to": "Candiru", "kind": "protects", "instrument": "DevilsTongue (with Microsoft, 2021)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://citizenlab.ca/2021/07/hooking-candiru-another-mercenary-spyware-vendor-comes-into-focus/"]},
+    {"from": "Citizen_Lab", "to": "Intellexa", "kind": "protects", "instrument": "Predator Files -> Treasury sanctions 2024", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://citizenlab.ca/2023/10/predator-in-the-wires-ahmed-eltantawy-targeted-with-predator-spyware-after-announcing-presidential-ambitions/"]},
+    {"from": "Citizen_Lab", "to": "Hack_For_Hire", "kind": "protects", "instrument": "Dark Basin -> BellTroX (2020)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://citizenlab.ca/2020/06/dark-basin-uncovering-a-massive-hack-for-hire-operation/"]},
+    {"from": "Citizen_Lab", "to": "China", "kind": "protects", "instrument": "Great Cannon (2015); WeChat/TikTok censorship measurement", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://citizenlab.ca/2015/04/chinas-great-cannon/"]},
+    {"from": "Apple", "to": "NSO_Group", "kind": "protects", "instrument": "litigation + Lockdown Mode (2021)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.apple.com/newsroom/2021/11/apple-sues-nso-group-to-curb-the-abuse-of-state-sponsored-spyware/"]},
+    {"from": "Meta", "to": "NSO_Group", "kind": "protects", "instrument": "WhatsApp suit -> 2025 jury verdict", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://about.fb.com/news/2019/10/protecting-our-users-from-a-cyber-attack/"]}
+  ]
+}

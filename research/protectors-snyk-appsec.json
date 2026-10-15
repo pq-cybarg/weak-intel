@@ -1,0 +1,26 @@
+{
+  "as_of": "2026-09-05",
+  "metadata": {
+    "title": "Snyk: developer-first SCA/SAST/container/IaC on the software supply chain",
+    "layer": "evidenced",
+    "theme": "blue-team"
+  },
+  "entities": [
+    {"name": "Snyk", "type": "vendor", "notes": "Developer security platform: Snyk Open Source (SCA), Snyk Code (SAST), Snyk Container, Snyk IaC, plus secrets and (2026) agentic/AI-code validation. Sits in the IDE/CLI/PR, not in the SOC. Distinct from Huntress (MDR) and CrowdStrike (endpoint EDR). Founded on open-source vulnerability intel; Trust Center lists ISO 27001 / SOC2. Customer-code-not-used-for-training is a vendor policy claim.", "source": ["https://snyk.io/", "https://docs.snyk.io/whats-snyk", "https://trust.snyk.io/"]},
+    {"name": "SCA", "type": "control", "notes": "Software composition analysis: known vulns and licenses in third-party packages. Why it works: most app risk is transitive deps, not first-party logic, and SCA is the control that sees the SBOM. Failure: 0-days not yet in the intel DB; unreachable CVEs as noise; does not stop a malicious maintainer who ships a clean version then a bad one (xz-utils / npm worm class) until the signature is published.", "source": ["https://snyk.io/product/open-source-security-management/", "https://docs.snyk.io/whats-snyk"]},
+    {"name": "SAST", "type": "control", "notes": "Static application security testing of first-party code (Snyk Code). Why it works: finds injection/authz classes before runtime. Failure: logic bugs, business-rule IDOR, and generated-code volume that outruns review.", "source": ["https://docs.snyk.io/whats-snyk"]},
+    {"name": "npm_Ecosystem", "type": "system", "notes": "JavaScript package registry. Recurring supply-chain target (typosquats, maintainer-account takeover, worms). Snyk's Trust Center (Aug 2026) documents Snyk identifying an active npm supply-chain campaign (Keyv/Cacheable 'ChainDrop') affecting hundreds of packages - Snyk as observer/defender of the ecosystem, not asserted as the initial victim.", "source": ["https://trust.snyk.io/", "https://snyk.io/product/open-source-security-management/"]}
+  ],
+  "edges": [
+    {"from": "Snyk", "to": "SCA", "kind": "protects", "instrument": "Snyk Open Source", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://snyk.io/product/open-source-security-management/"]},
+    {"from": "Snyk", "to": "SAST", "kind": "protects", "instrument": "Snyk Code", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://docs.snyk.io/whats-snyk"]},
+    {"from": "Snyk", "to": "Software_Update_Trust", "kind": "protects", "instrument": "dependency/container/IaC scanning in the SDLC", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://docs.snyk.io/whats-snyk"]},
+    {"from": "Snyk", "to": "SupplyChain_Implant", "kind": "protects", "instrument": "detects known-bad packages after intel lands; does not prevent first-day maintainer compromise", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://snyk.io/product/open-source-security-management/"]},
+    {"from": "Snyk", "to": "npm_Ecosystem", "kind": "protects", "instrument": "SCA + published intel; Aug 2026 ChainDrop identification (Trust Center)", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://trust.snyk.io/"]},
+    {"from": "SupplyChain_Implant", "to": "npm_Ecosystem", "kind": "targets", "instrument": "malicious packages / maintainer takeover", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://trust.snyk.io/"]},
+    {"from": "Snyk", "to": "Patch_Management", "kind": "affiliates", "instrument": "SCA findings feed the n-day fix queue (app deps, not OS KEV)", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://docs.snyk.io/whats-snyk", "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"]},
+    {"from": "Snyk", "to": "Huntress", "kind": "affiliates", "instrument": "peer protectors, different plane: AppSec/SCA vs MDR/SOC", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://snyk.io/", "https://www.huntress.com/"]},
+    {"from": "Snyk", "to": "CrowdStrike", "kind": "affiliates", "instrument": "peer market (developer platform vs endpoint EDR)", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://snyk.io/", "https://www.crowdstrike.com/"]},
+    {"from": "SUNBURST", "to": "Software_Update_Trust", "kind": "exploits", "instrument": "signed update as the route SCA does not see (build system, not a CVE in a dep)", "confidence": "high", "status": "public-record", "grade": "strong", "notes": "SCA would not have stopped SolarWinds; that is a signed-build compromise, not a vulnerable library version.", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-008a"]}
+  ]
+}

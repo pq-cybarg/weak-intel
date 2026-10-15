@@ -1,0 +1,29 @@
+{
+  "as_of": "2026-09-07",
+  "metadata": {
+    "title": "Crypto mixers: laundering rails vs financial-privacy tools",
+    "layer": "evidenced",
+    "theme": "crypto"
+  },
+  "notes": "Ported from bubble-map privacy-tool + crypto-crime threads. The genuine dual-use: the same mixers that give ordinary users on-chain privacy are the laundering rail for state and criminal theft. Sanction-and-prosecution outcomes are graded; the Tornado Cash OFAC designation was later vacated - present both.",
+  "entities": [
+    {"name": "Tornado_Cash", "type": "method", "notes": "Ethereum coin-mixing smart contracts. OFAC sanctioned it (Aug 2022), citing >$7B laundered incl. Lazarus proceeds. Nov 2024 the 5th Circuit ruled OFAC overstepped (immutable smart contracts aren't sanctionable 'property'); Treasury delisted it (Mar 2025). Co-founder Roman Storm convicted on one count (Aug 2025).", "capability_tier": "industrial", "source": ["https://home.treasury.gov/news/press-releases/jy0916"]},
+    {"name": "Samourai_Wallet", "type": "vendor", "notes": "Bitcoin privacy wallet (Whirlpool coinjoin, Ricochet). DOJ/SDNY charged its founders (Apr 2024) with money-laundering/unlicensed-money-transmission; FinCEN framing contested by privacy advocates.", "capability_tier": "commercial", "source": ["https://www.justice.gov/usao-sdny/pr/founders-and-ceo-cryptocurrency-mixing-service-arrested-and-charged-money-laundering"]},
+    {"name": "Roman_Storm", "type": "person", "notes": "Tornado Cash co-founder. Convicted Aug 2025 on one count (operating an unlicensed money-transmitting business); jury hung on the money-laundering/sanctions counts. The 'is writing code a crime' test case.", "source": ["https://www.justice.gov/usao-sdny/pr"]},
+    {"name": "OFAC", "type": "agency", "notes": "Treasury's Office of Foreign Assets Control. Runs the SDN sanctions list; its Tornado Cash designation was the first against autonomous smart-contract code - and the first to be judicially vacated.", "source": ["https://ofac.treasury.gov/"]},
+    {"name": "FinCEN", "type": "agency", "notes": "Financial Crimes Enforcement Network. Money-transmitter registration/AML regime under which mixer operators are charged.", "source": ["https://www.fincen.gov/"]},
+    {"name": "Financial_Privacy", "type": "capability", "notes": "The legitimate demand the mixers also serve: on-chain pseudonymity is not anonymity, and public ledgers expose everyone's balances/history. The privacy case that makes mixers dual-use rather than purely criminal.", "source": ["https://www.eff.org/"]}
+  ],
+  "edges": [
+    {"from": "Lazarus_Group", "to": "Tornado_Cash", "kind": "uses", "instrument": "laundering stolen crypto (Ronin, Harmony)", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://home.treasury.gov/news/press-releases/jy0916"]},
+    {"from": "OFAC", "to": "Tornado_Cash", "kind": "targets", "instrument": "SDN designation 2022 (later vacated 2024)", "confidence": "high", "status": "public-record", "grade": "fact", "notes": "5th Circuit: immutable smart contracts not 'property'; Treasury delisted Mar 2025.", "source": ["https://home.treasury.gov/news/press-releases/jy0916"]},
+    {"from": "DOJ", "to": "Tornado_Cash", "kind": "targets", "instrument": "SDNY prosecution of founders", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/usao-sdny/pr"]},
+    {"from": "DOJ", "to": "Samourai_Wallet", "kind": "targets", "instrument": "SDNY indictment 2024", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/usao-sdny/pr/founders-and-ceo-cryptocurrency-mixing-service-arrested-and-charged-money-laundering"]},
+    {"from": "FinCEN", "to": "Samourai_Wallet", "kind": "targets", "instrument": "unlicensed money-transmission framing", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.fincen.gov/"]},
+    {"from": "Roman_Storm", "to": "Tornado_Cash", "kind": "affiliates", "instrument": "co-founder/developer", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/usao-sdny/pr"]},
+    {"from": "Roman_Storm", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "convicted one count Aug 2025 (others hung)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/usao-sdny/pr"]},
+    {"from": "Tornado_Cash", "to": "Financial_Privacy", "kind": "dual_use", "instrument": "privacy tool AND laundering rail", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.eff.org/"]},
+    {"from": "Samourai_Wallet", "to": "Financial_Privacy", "kind": "dual_use", "instrument": "coinjoin privacy AND laundering concern", "confidence": "high", "status": "public-record", "grade": "moderate", "source": ["https://www.eff.org/"]},
+    {"from": "Tornado_Cash", "to": "got_away", "kind": "got_away", "instrument": "OFAC designation judicially vacated; code persists on-chain", "confidence": "moderate", "status": "public-record", "grade": "moderate", "notes": "The protocol (immutable contracts) outlived the sanction; the people did not.", "source": ["https://www.courtlistener.com/"]}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-09-05",
+  "metadata": {
+    "title": "ECDSA weak-nonce failures: the present-tense crypto footgun",
+    "layer": "evidenced",
+    "theme": "crypto"
+  },
+  "notes": "Ported from bubble-map ECDSA-nonce tracker; anchors the local ecdsafail-cli skill. Two distinct failure classes on one primitive: (1) present-tense implementation bugs (nonce reuse/bias -> closed-form or lattice key recovery), and (2) the future Shor break. PQC answers both.",
+  "entities": [
+    {"name": "ECDSA", "type": "standard", "notes": "Elliptic Curve DSA over secp256k1/P-256. Signature security collapses if the per-signature nonce k is reused (same r -> solve for private key d, closed-form) or biased/partially known (lattice attack on the Hidden Number Problem).", "source": ["https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm"]},
+    {"name": "Weak_Nonce_Failure", "type": "method", "notes": "In the wild: Brengel & Rossow parsed 647M BTC signatures, found 1,068 reused r-values across 4,433 keys; the 2013 Android SecureRandom bug reused k and drained wallets; Biased Nonce Sense (2019) and 'Chain Reactions' (2026, Polygon MEV) recovered ETH/BTC keys.", "source": ["https://eprint.iacr.org/2019/023"]},
+    {"name": "ECDSA_fail_Tracker", "type": "control", "notes": "The 'ECDSA.fail' premise: a living scanner/disclosure thread continuously cataloging chains and libraries for repeated/biased/related nonces and surfacing affected signatures. Local analogue: the ecdsafail-cli skill.", "source": ["https://eprint.iacr.org/2019/023"]},
+    {"name": "RFC6979_Deterministic", "type": "control", "notes": "Derives k deterministically as HMAC(message-hash, secret-key) - same message always yields the same k, removing RNG dependence and eliminating the reuse/bias vector for correct implementations.", "source": ["https://datatracker.ietf.org/doc/html/rfc6979"]},
+    {"name": "EdDSA_Ed25519", "type": "standard", "notes": "Derives the nonce deterministically from private key + message by design, structurally preventing RNG-driven reuse; increasingly preferred for new systems. Does NOT address the quantum break.", "source": ["https://datatracker.ietf.org/doc/html/rfc8032"]},
+    {"name": "QRL", "type": "vendor", "notes": "The Quantum Resistant Ledger uses stateful hash-based signatures (XMSS) instead of ECDSA - positioned explicitly as post-ECDSA/post-quantum.", "source": ["https://www.theqrl.org/"]},
+    {"name": "Bitcoin", "type": "system", "notes": "Authorizes spends with ECDSA over secp256k1 (Schnorr/Taproot added 2021, but ECDSA dominates legacy UTXOs) - every legacy signature's safety rests on nonce quality.", "source": ["https://en.wikipedia.org/wiki/Bitcoin"]},
+    {"name": "Ethereum", "type": "system", "notes": "EOAs sign with ECDSA/secp256k1; the same nonce-quality dependence applies chain-wide.", "source": ["https://ethereum.org/"]}
+  ],
+  "edges": [
+    {"from": "Bitcoin", "to": "ECDSA", "kind": "uses", "instrument": "secp256k1 spend authorization", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://en.wikipedia.org/wiki/Bitcoin"]},
+    {"from": "Ethereum", "to": "ECDSA", "kind": "uses", "instrument": "EOA signing", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://ethereum.org/"]},
+    {"from": "Weak_Nonce_Failure", "to": "ECDSA", "kind": "exploits", "instrument": "nonce reuse/bias -> private-key recovery", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://eprint.iacr.org/2019/023"]},
+    {"from": "Weak_Nonce_Failure", "to": "Bitcoin", "kind": "harvests", "instrument": "documented reused-r wallet drains", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://eprint.iacr.org/2019/023"]},
+    {"from": "Weak_Nonce_Failure", "to": "Ethereum", "kind": "harvests", "instrument": "Biased Nonce Sense / Chain Reactions key recovery", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://eprint.iacr.org/2019/023"]},
+    {"from": "ECDSA_fail_Tracker", "to": "Weak_Nonce_Failure", "kind": "protects", "instrument": "continuous scanning/disclosure", "confidence": "high", "status": "public-record", "grade": "moderate", "source": ["https://eprint.iacr.org/2019/023"]},
+    {"from": "RFC6979_Deterministic", "to": "ECDSA", "kind": "protects", "instrument": "deterministic k removes RNG vector", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://datatracker.ietf.org/doc/html/rfc6979"]},
+    {"from": "EdDSA_Ed25519", "to": "ECDSA", "kind": "protects", "instrument": "structural deterministic nonce (new-system alternative)", "confidence": "high", "status": "public-record", "grade": "moderate", "source": ["https://datatracker.ietf.org/doc/html/rfc8032"]},
+    {"from": "CRQC", "to": "ECDSA", "kind": "dies_under_crqc", "instrument": "Shor recovers private key from public key", "confidence": "high", "status": "assessment", "grade": "strong", "notes": "Separate from the nonce footgun - no implementation error needed.", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"from": "PQC", "to": "ECDSA", "kind": "protects", "instrument": "ML-DSA/SLH-DSA migration removes both failure classes", "confidence": "high", "status": "assessment", "grade": "moderate", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"from": "QRL", "to": "XMSS", "kind": "uses", "instrument": "hash-based signatures instead of ECDSA", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.theqrl.org/"]},
+    {"from": "EdDSA_Ed25519", "to": "CRQC", "kind": "dies_under_crqc", "instrument": "still elliptic-curve; Shor-breakable", "confidence": "high", "status": "assessment", "grade": "strong", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]}
+  ]
+}

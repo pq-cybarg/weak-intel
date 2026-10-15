@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.DS_Store
+**/.DS_Store
+data/*.csv
+models/tla/tla2tools.jar
+models/alloy/alloy.jar
+models/alloy/*.class
+models/tla/states/
+.venv/
+.claude/
+.grok/
+CLAUDE.md
+AGENTS.md
+*this-session-is-being-continued*.txt
+*continueclaude*.txt

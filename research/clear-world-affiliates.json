@@ -1,0 +1,26 @@
+{
+  "as_of": "2026-09-04",
+  "metadata": {
+    "title": "Clear-world affiliates: universities, standards, contractors, vendors as routes",
+    "layer": "evidenced",
+    "theme": "dual-use"
+  },
+  "entities": [
+    {"name": "MIT", "type": "affiliate", "notes": "Rivest / academic crypto. Clear-world research that becomes the stack APTs also live on.", "source": ["https://people.csail.mit.edu/rivest/"]},
+    {"name": "Weizmann", "type": "affiliate", "notes": "Shamir. Academic origin of RSA.", "source": ["https://www.wisdom.weizmann.ac.il/~shamir/"]},
+    {"name": "University_of_Toronto", "type": "affiliate", "notes": "Citizen Lab host.", "source": ["https://citizenlab.ca/"]},
+    {"name": "Booz_Allen", "type": "vendor", "notes": "US IC contractor. Snowden employment is the public dual-use exhibit of cleared contractors as leak surface.", "source": ["https://www.boozallen.com/"]},
+    {"name": "MITRE", "type": "affiliate", "notes": "ATT&CK. The shared language of red and blue. Not an accusation; a map.", "source": ["https://attack.mitre.org/"]},
+    {"name": "Recorded_Future", "type": "vendor", "notes": "Commercial threat intel. Mastercard-owned. Telemetry that defends is itself a dataset.", "source": ["https://www.recordedfuture.com/"]},
+    {"name": "Google_TAG", "type": "vendor", "notes": "Threat Analysis Group. Public spyware/APT disclosures (Variston, etc.).", "source": ["https://blog.google/threat-analysis-group/"]}
+  ],
+  "edges": [
+    {"from": "University_of_Toronto", "to": "Citizen_Lab", "kind": "affiliates", "instrument": "host lab", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://citizenlab.ca/"]},
+    {"from": "MIT", "to": "Ron_Rivest", "kind": "affiliates", "instrument": "faculty", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://people.csail.mit.edu/rivest/"]},
+    {"from": "MITRE", "to": "CISA", "kind": "affiliates", "instrument": "ATT&CK as shared analytic language", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://attack.mitre.org/"]},
+    {"from": "Booz_Allen", "to": "NSA", "kind": "affiliates", "instrument": "cleared contractor (public)", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.boozallen.com/"]},
+    {"from": "Google_TAG", "to": "NSO_Group", "kind": "authored", "instrument": "public tagging of mercenary activity", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://blog.google/threat-analysis-group/"]},
+    {"from": "Recorded_Future", "to": "Threat_Intel_Sharing", "kind": "protects", "instrument": "commercial intel", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.recordedfuture.com/"]},
+    {"from": "SolarWinds", "to": "Software_Update_Trust", "kind": "dual_use", "instrument": "clear-world update channel as APT route", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-008a"]}
+  ]
+}

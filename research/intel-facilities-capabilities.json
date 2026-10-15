@@ -1,0 +1,41 @@
+{
+  "as_of": "2026-09-04",
+  "metadata": {
+    "title": "Intelligence facilities, collection technologies, capability tiers",
+    "layer": "evidenced",
+    "theme": "facilities"
+  },
+  "entities": [
+    {"name": "NSA", "type": "agency", "notes": "US SIGINT. Public Snowden/ODNI disclosures describe scale; CNSA 2.0 is the defensive crypto mandate. Offensive tooling associated in public reporting with Equation Group / Shadow Brokers.", "capability_tier": "industrial", "source": ["https://www.nsa.gov/Press-Room/News-Highlights-Stories/Article/Article/3148074/nsa-releases-future-cnsasuite-2-0-algorithms/"]},
+    {"name": "GCHQ", "type": "agency", "notes": "UK SIGINT. Five Eyes partner. Public NCSC defensive arm is the civilian face.", "capability_tier": "industrial", "source": ["https://www.ncsc.gov.uk/"]},
+    {"name": "ASD", "type": "agency", "notes": "Australian Signals Directorate. Pine Gap partner.", "capability_tier": "industrial", "source": ["https://www.asd.gov.au/"]},
+    {"name": "CSE", "type": "agency", "notes": "Communications Security Establishment (Canada).", "capability_tier": "industrial", "source": ["https://www.cse-cst.gc.ca/"]},
+    {"name": "GCSB", "type": "agency", "notes": "New Zealand GCSB. Five Eyes.", "capability_tier": "commercial", "source": ["https://www.gcsb.govt.nz/"]},
+    {"name": "Unit_8200", "type": "agency", "notes": "IDF SIGINT. Public alumni pipeline into commercial spyware (NSO et al.) is widely reported; not every alumnus is a vendor.", "capability_tier": "industrial", "source": ["https://citizenlab.ca/2021/07/the-pegasus-project/"]},
+    {"name": "Fort_Meade", "type": "facility", "lat": 39.108, "lon": -76.771, "notes": "NSA headquarters, Maryland.", "source": ["https://www.nsa.gov/about/"]},
+    {"name": "Utah_Data_Center", "type": "facility", "lat": 40.427, "lon": -111.932, "notes": "NSA Utah Data Center (Bluffdale). Public reporting as bulk storage; capacity figures are estimates.", "source": ["https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/669567/"]},
+    {"name": "GCHQ_Cheltenham", "type": "facility", "lat": 51.899, "lon": -2.124, "notes": "GCHQ Doughnut.", "source": ["https://www.gchq.gov.uk/"]},
+    {"name": "Menwith_Hill", "type": "facility", "lat": 54.009, "lon": -1.688, "notes": "RAF Menwith Hill. Publicly described as a US/UK satellite-intelligence station.", "source": ["https://www.raf.mod.uk/our-organisation/stations/raf-menwith-hill/"]},
+    {"name": "Pine_Gap", "type": "facility", "lat": -23.799, "lon": 133.737, "notes": "Joint Defence Facility Pine Gap. Public reporting: US spy-satellite control covering a large fraction of the Eastern Hemisphere.", "source": ["https://www.defence.gov.au/about/locations-property/pine-gap"]},
+    {"name": "Room_641A", "type": "facility", "lat": 37.784, "lon": -122.399, "notes": "AT&T San Francisco intercept room (Mark Klein / EFF public record). Historical exhibit of upstream collection on a carrier.", "source": ["https://www.eff.org/nsa/room641a"]},
+    {"name": "Upstream_Collection", "type": "capability", "notes": "Cable/router-scale intercept. Snowden public reporting. The HNDL harvest surface.", "capability_tier": "industrial", "source": ["https://www.eff.org/nsa/room641a"]},
+    {"name": "XKEYSCORE", "type": "capability", "notes": "Named in Snowden documents as a query/front-end over collected traffic. Existence public; current internals unknown.", "capability_tier": "industrial", "source": ["https://www.eff.org/nsa"]},
+    {"name": "Lawful_Intercept_CALEA", "type": "capability", "notes": "US CALEA-mandated carrier wiretap interfaces. Salt Typhoon public reporting: the same door used by PRC operators.", "capability_tier": "industrial", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-326a"]},
+    {"name": "SS7_Interception", "type": "capability", "notes": "Legacy telecom signaling location/intercept (Circles et al.). No implant required.", "capability_tier": "commercial", "source": ["https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/"]}
+  ],
+  "edges": [
+    {"from": "NSA", "to": "Fort_Meade", "kind": "hosted_at", "instrument": "HQ", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.nsa.gov/about/"]},
+    {"from": "NSA", "to": "Utah_Data_Center", "kind": "hosted_at", "instrument": "bulk storage", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/669567/"]},
+    {"from": "GCHQ", "to": "GCHQ_Cheltenham", "kind": "hosted_at", "instrument": "HQ", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.gchq.gov.uk/"]},
+    {"from": "NSA", "to": "Menwith_Hill", "kind": "hosted_at", "instrument": "joint satellite station", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.raf.mod.uk/our-organisation/stations/raf-menwith-hill/"]},
+    {"from": "NSA", "to": "Pine_Gap", "kind": "hosted_at", "instrument": "joint satellite control", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.defence.gov.au/about/locations-property/pine-gap"]},
+    {"from": "ASD", "to": "Pine_Gap", "kind": "hosted_at", "instrument": "Australian partner", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.defence.gov.au/about/locations-property/pine-gap"]},
+    {"from": "NSA", "to": "GCHQ", "kind": "affiliates", "instrument": "Five Eyes", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.ncsc.gov.uk/"]},
+    {"from": "NSA", "to": "Upstream_Collection", "kind": "has_capability", "instrument": "public disclosures", "confidence": "high", "status": "declassified", "grade": "strong", "source": ["https://www.eff.org/nsa"]},
+    {"from": "NSA", "to": "XKEYSCORE", "kind": "has_capability", "instrument": "named in Snowden docs", "confidence": "high", "status": "declassified", "grade": "strong", "source": ["https://www.eff.org/nsa"]},
+    {"from": "Room_641A", "to": "Upstream_Collection", "kind": "uses", "instrument": "carrier tap exhibit", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.eff.org/nsa/room641a"]},
+    {"from": "Salt_Typhoon", "to": "Lawful_Intercept_CALEA", "kind": "exploits", "instrument": "compromised carrier LI systems", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-326a"]},
+    {"from": "Lawful_Intercept_CALEA", "to": "dual_use_door", "kind": "dual_use", "instrument": "mandated access is not exclusive", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-326a"]},
+    {"from": "Unit_8200", "to": "NSO_Group", "kind": "affiliates", "instrument": "alumni pipeline (public reporting)", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://citizenlab.ca/2021/07/the-pegasus-project/"]}
+  ]
+}

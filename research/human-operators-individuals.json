@@ -1,0 +1,108 @@
+{
+  "as_of": "2026-09-05",
+  "metadata": {
+    "title": "The human layer: leakers, authors, operators, informants",
+    "layer": "evidenced",
+    "theme": "people"
+  },
+  "notes": "Ported/expanded from bubble-map #241 notable-individuals. People are graded on public court record only. Presence here is not a moral verdict; got_away/did_not_get_away track legal outcome, not judgement.",
+  "entities": [
+    {
+      "name": "Julian_Assange",
+      "type": "person",
+      "notes": "Founded WikiLeaks (2006), editor/public face through the 2010 megaleaks. Extradition fight ended 2024 with a US plea deal (time served), freeing him to Australia.",
+      "source": ["https://www.justice.gov/opa/pr/wikileaks-founder-julian-assange-pleads-guilty"]
+    },
+    {
+      "name": "Edward_Snowden",
+      "type": "person",
+      "notes": "NSA contractor (Booz Allen) who leaked the 2013 mass-surveillance archive (PRISM, upstream/backbone collection, XKEYSCORE). The disclosure that reshaped the global privacy / crypto / PQC debate. Stranded in Moscow 2013; Russian citizenship 2022 - a jurisdictional fact, not endorsement.",
+      "source": ["https://www.pulitzer.org/winners/washington-post-1"]
+    },
+    {
+      "name": "Chelsea_Manning",
+      "type": "person",
+      "notes": "Army intelligence analyst who leaked the Iraq/Afghan War Logs, Collateral Murder, and Cablegate to WikiLeaks (2010). Convicted 2013 (35 yrs); sentence commuted by Obama (2017).",
+      "source": ["https://www.justice.gov/"]
+    },
+    {
+      "name": "Josh_Schulte",
+      "type": "person",
+      "notes": "Former CIA software engineer convicted (2022) as the source of the Vault 7 leak to WikiLeaks - the largest data theft in CIA history. Separate CSAM conviction (both court fact).",
+      "source": ["https://www.justice.gov/usao-sdny/pr/joshua-adam-schulte-convicted-leaking-classified-national-defense-information"]
+    },
+    {
+      "name": "Maksim_Yakubets",
+      "type": "person",
+      "notes": "Accused leader of Evil Corp (Dridex/Zeus lineage). OFAC-sanctioned + DOJ-indicted (2019), $5M reward, reported FSB links. 2024 UK/US actions named further associates and a LockBit tie. At large in Russia.",
+      "source": ["https://home.treasury.gov/news/press-releases/sm845"]
+    },
+    {
+      "name": "Marcus_Hutchins",
+      "type": "person",
+      "notes": "MalwareTech. Registered the kill-switch domain that stopped WannaCry's spread (May 2017) - the accidental-hero moment. Months later DOJ arrested him over earlier authorship of the Kronos banking trojan; pleaded guilty (2019), time served. Author-turned-defender arc.",
+      "source": ["https://www.justice.gov/opa/pr/malware-author-pleads-guilty-creating-and-distributing-kronos-banking-trojan"]
+    },
+    {
+      "name": "Onel_de_Guzman",
+      "type": "person",
+      "notes": "Manila college student who wrote the ILOVEYOU worm (2000). Arrested but never charged (no applicable Philippine law at the time); confirmed authorship on record 2020. The human origin of the law-lags-tech precedent.",
+      "source": ["https://www.bbc.com/news/technology-52458340"]
+    },
+    {
+      "name": "Paras_Jha",
+      "type": "person",
+      "notes": "Co-author of the Mirai IoT botnet; pleaded guilty (2017). Originally built to attack Minecraft DDoS-protection markets before it escaped control.",
+      "source": ["https://www.justice.gov/opa/pr/three-defendants-plead-guilty-computer-fraud-charges-relating-mirai-botnet"]
+    },
+    {
+      "name": "Hector_Monsegur",
+      "type": "person",
+      "notes": "'Sabu' - leader/hub of LulzSec (and AntiSec). After his 2011 arrest he became an FBI informant; his cooperation led to arrests of fellow members. The canonical flip of a hacktivist leader to dismantle a leaderless crew from within.",
+      "source": ["https://www.justice.gov/usao-sdny/pr/hector-xavier-monsegur-sentenced-manhattan-federal-court-time-served"]
+    },
+    {
+      "name": "Mirai",
+      "type": "malware",
+      "notes": "2016 IoT botnet: enslaved insecure devices via default creds into a massive DDoS engine. Hit Krebs-on-Security, OVH, and via Dyn (Oct 21 2016) knocked out Twitter/Netflix/Reddit across the US East Coast. Source code was released publicly, spawning countless variants.",
+      "capability_tier": "artisan",
+      "source": ["https://www.justice.gov/opa/pr/three-defendants-plead-guilty-computer-fraud-charges-relating-mirai-botnet"]
+    },
+    {
+      "name": "FBI",
+      "type": "agency",
+      "notes": "US domestic law-enforcement/counterintelligence. Its canonical hacktivist play is the flipped insider (Sabu -> LulzSec takedown); also runs botnet-takedown and ransomware-disruption operations.",
+      "source": ["https://www.fbi.gov/investigate/cyber"]
+    },
+    {
+      "name": "ILOVEYOU_Worm",
+      "type": "malware",
+      "notes": "May 2000 email worm ('LOVE-LETTER-FOR-YOU.txt.vbs'). Overwrote files, mailed itself to the whole Outlook address book; ~$5-10B in damage. The law-lags-tech precedent: author never charged.",
+      "capability_tier": "artisan",
+      "source": ["https://www.bbc.com/news/technology-52458340"]
+    }
+  ],
+  "edges": [
+    {"from": "Julian_Assange", "to": "WikiLeaks", "kind": "affiliates", "instrument": "founder/editor", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/opa/pr/wikileaks-founder-julian-assange-pleads-guilty"]},
+    {"from": "Edward_Snowden", "to": "NSA", "kind": "affiliates", "instrument": "contractor turned leaker", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.pulitzer.org/winners/washington-post-1"]},
+    {"from": "Edward_Snowden", "to": "Booz_Allen", "kind": "affiliates", "instrument": "employer of record 2013", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.reuters.com/article/us-usa-security-boozallen-idUSBRE95901R20130610/"]},
+    {"from": "Edward_Snowden", "to": "Russia", "kind": "affiliates", "instrument": "asylum/citizenship (jurisdiction)", "confidence": "high", "status": "public-record", "grade": "fact", "notes": "Location is geopolitics, not endorsement.", "source": ["https://www.bbc.com/news/world-europe-63089477"]},
+    {"from": "Chelsea_Manning", "to": "WikiLeaks", "kind": "affiliates", "instrument": "source of 2010 megaleaks", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/"]},
+    {"from": "Chelsea_Manning", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "convicted 2013 (35y), commuted 2017", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://obamawhitehouse.archives.gov/"]},
+    {"from": "Josh_Schulte", "to": "Vault7", "kind": "authored", "instrument": "convicted source", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/usao-sdny/pr/joshua-adam-schulte-convicted-leaking-classified-national-defense-information"]},
+    {"from": "Josh_Schulte", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "SDNY espionage conviction 2022", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/usao-sdny/pr/joshua-adam-schulte-convicted-leaking-classified-national-defense-information"]},
+    {"from": "Maksim_Yakubets", "to": "Evil_Corp", "kind": "affiliates", "instrument": "accused leader", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://home.treasury.gov/news/press-releases/sm845"]},
+    {"from": "Maksim_Yakubets", "to": "got_away", "kind": "got_away", "instrument": "indicted/sanctioned, at large in Russia", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://home.treasury.gov/news/press-releases/sm845"]},
+    {"from": "Marcus_Hutchins", "to": "WannaCry", "kind": "protects", "instrument": "sinkholed the kill-switch domain", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.wired.com/story/confessions-marcus-hutchins-hacker-who-saved-the-internet/"]},
+    {"from": "Marcus_Hutchins", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "Kronos authorship guilty plea 2019 (time served)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/opa/pr/malware-author-pleads-guilty-creating-and-distributing-kronos-banking-trojan"]},
+    {"from": "Onel_de_Guzman", "to": "ILOVEYOU_Worm", "kind": "authored", "instrument": "sole author", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.bbc.com/news/technology-52458340"]},
+    {"from": "Onel_de_Guzman", "to": "got_away", "kind": "got_away", "instrument": "arrested, never charged (no applicable law)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.bbc.com/news/technology-52458340"]},
+    {"from": "Paras_Jha", "to": "Mirai", "kind": "authored", "instrument": "co-author", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/opa/pr/three-defendants-plead-guilty-computer-fraud-charges-relating-mirai-botnet"]},
+    {"from": "Paras_Jha", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "guilty plea 2017", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/opa/pr/three-defendants-plead-guilty-computer-fraud-charges-relating-mirai-botnet"]},
+    {"from": "Hector_Monsegur", "to": "LulzSec", "kind": "affiliates", "instrument": "'Sabu', leader/hub", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/usao-sdny/pr/hector-xavier-monsegur-sentenced-manhattan-federal-court-time-served"]},
+    {"from": "Hector_Monsegur", "to": "FBI", "kind": "affiliates", "instrument": "cooperating informant post-2011", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/usao-sdny/pr/hector-xavier-monsegur-sentenced-manhattan-federal-court-time-served"]},
+    {"from": "Mirai", "to": "Loader_Botnet", "kind": "affiliates", "instrument": "IoT DDoS botnet class", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.justice.gov/opa/pr/three-defendants-plead-guilty-computer-fraud-charges-relating-mirai-botnet"]},
+    {"from": "Mirai", "to": "Worm", "kind": "affiliates", "instrument": "self-propagating lineage", "confidence": "high", "status": "public-record", "grade": "moderate", "source": ["https://www.cisa.gov/news-events/alerts"]},
+    {"from": "ILOVEYOU_Worm", "to": "Worm", "kind": "affiliates", "instrument": "email-worm lineage", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.bbc.com/news/technology-52458340"]}
+  ]
+}

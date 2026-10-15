@@ -1,0 +1,27 @@
+{
+  "as_of": "2026-09-05",
+  "metadata": {
+    "title": "Huntress: SMB/MSP managed detection, 24/7 SOC, owned EDR stack",
+    "layer": "evidenced",
+    "theme": "blue-team"
+  },
+  "entities": [
+    {"name": "Huntress", "type": "vendor", "notes": "Managed security platform for SMBs and MSPs: owned Managed EDR + Managed ITDR (Microsoft 365 identities) + Managed SIEM + SAT, operated by a 24/7 human-led SOC. CVE Numbering Authority. Distinct from CrowdStrike-class enterprise EDR sold as a console; Huntress sells the SOC as the product. Vendor-claimed scale (endpoints/identities) is not independently audited here.", "source": ["https://www.huntress.com/", "https://www.huntress.com/why-huntress/24-7-soc", "https://www.huntress.com/company/our-story"]},
+    {"name": "Huntress_SOC", "type": "control", "notes": "24/7 SOC wrapping Huntress telemetry. Why it works for SMBs: detection-to-remediation is staffed, so a shop without a SOC still gets a human on the incident. Failure mode is the same as any EDR-backed SOC: if the agent is killed (BYOVD/EDR-killer) or identity is reset via helpdesk, the SOC sees a hole, not a guarantee.", "source": ["https://www.huntress.com/why-huntress/24-7-soc"]},
+    {"name": "Managed_ITDR", "type": "control", "notes": "Identity threat detection and response on Microsoft 365. Adjacent to helpdesk-vishing (Scattered Spider): it can see anomalous identity use after the fact; it does not replace phishing-resistant MFA or a helpdesk that will not reset on a phone call.", "source": ["https://www.huntress.com/platform"]},
+    {"name": "MSP_Channel", "type": "affiliate", "notes": "Outsourced IT / MSP channel. Huntress's primary distribution is through MSPs protecting many small tenants, not Fortune-500 SOC buy. That is a different concentration: one MSP compromise or one bad tenant config fans out.", "source": ["https://www.huntress.com/who-we-serve/outsourced-it-and-security-teams"]}
+  ],
+  "edges": [
+    {"from": "Huntress", "to": "EDR_XDR", "kind": "protects", "instrument": "Managed EDR (owned stack, not a third-party agent wrap)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.huntress.com/"]},
+    {"from": "Huntress", "to": "Huntress_SOC", "kind": "protects", "instrument": "24/7 SOC as the product", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.huntress.com/why-huntress/24-7-soc"]},
+    {"from": "Huntress", "to": "SIEM_Detection_Engineering", "kind": "protects", "instrument": "Managed SIEM", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.huntress.com/"]},
+    {"from": "Huntress", "to": "Managed_ITDR", "kind": "protects", "instrument": "M365 identity telemetry", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.huntress.com/platform"]},
+    {"from": "Huntress", "to": "MSP_Channel", "kind": "affiliates", "instrument": "primary go-to-market", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.huntress.com/who-we-serve/outsourced-it-and-security-teams"]},
+    {"from": "Huntress", "to": "Microsoft", "kind": "affiliates", "instrument": "ITDR sits on Microsoft 365 identity plane", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.huntress.com/platform"]},
+    {"from": "Huntress", "to": "CrowdStrike", "kind": "affiliates", "instrument": "peer in EDR/MDR market (different buyer: SMB/MSP vs enterprise console)", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.huntress.com/", "https://www.crowdstrike.com/"]},
+    {"from": "Huntress_SOC", "to": "Ransomware_Crypto", "kind": "protects", "instrument": "human-led containment after EDR signal", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.huntress.com/why-huntress/24-7-soc"]},
+    {"from": "Managed_ITDR", "to": "Helpdesk_Identity", "kind": "protects", "instrument": "sees anomalous identity use; does not stop helpdesk reset", "confidence": "moderate", "status": "public-record", "grade": "moderate", "notes": "Same residual as FIDO2: vishing the helpdesk still works.", "source": ["https://www.huntress.com/platform", "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"]},
+    {"from": "BYOVD", "to": "Huntress", "kind": "exploits", "instrument": "EDR-killer class vs any endpoint agent, including Managed EDR", "confidence": "moderate", "status": "public-record", "grade": "moderate", "notes": "No Huntress-specific BYOVD write-up required: the failure is the control class (EDR_XDR), not a named Huntress CVE.", "source": ["https://attack.mitre.org/techniques/T1068/"]},
+    {"from": "CISA", "to": "Huntress", "kind": "affiliates", "instrument": "civilian-defender peer (KEV/advisories vs commercial SOC)", "confidence": "low", "status": "public-record", "grade": "weak", "source": ["https://www.cisa.gov/", "https://www.huntress.com/"]}
+  ]
+}

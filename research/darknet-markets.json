@@ -1,0 +1,24 @@
+{
+  "as_of": "2026-09-07",
+  "metadata": {
+    "title": "Darknet markets & data-exfiltration services",
+    "layer": "evidenced",
+    "theme": "actor"
+  },
+  "notes": "The marketplace layer of eCrime: where stolen data, access, and contraband are sold. Historically takedown-prone (Silk Road, AlphaBay) but continuously reborn - the persistent-market pattern.",
+  "entities": [
+    {"name": "Darknet_Market", "type": "capability", "notes": "Tor-hosted marketplace class: stolen data, initial access, credentials, drugs, contraband, escrow + reputation. Structurally resilient - takedowns kill instances, not the model.", "source": ["https://www.justice.gov/opa/pr/alphabay-largest-online-dark-market-shut-down"]},
+    {"name": "Nexus_Darkweb", "type": "criminal", "notes": "Dark-web data-exfiltration service (advertised on the Russian forum Exploit, Aug 2026) claiming continuous near-real-time access to a breached identity-verification pipeline (~500k docs/day). The data-as-a-service mutation of the market.", "capability_tier": "artisan", "source": ["https://www.bleepingcomputer.com/"]},
+    {"name": "Silk_Road", "type": "criminal", "notes": "The original Tor drug market (2011-13). Founder Ross Ulbricht convicted 2015 (life; pardoned Jan 2025) - the case that defined darknet-market prosecution.", "capability_tier": "artisan", "source": ["https://www.justice.gov/usao-sdny/pr/ross-ulbricht-aka-dread-pirate-roberts-sentenced-manhattan-federal-court-life-prison"]},
+    {"name": "AlphaBay", "type": "criminal", "notes": "Largest darknet market at its peak; seized in Operation Bayonet (2017), a coordinated US/EU takedown that funneled users into the honeypotted Hansa market.", "capability_tier": "artisan", "source": ["https://www.justice.gov/opa/pr/alphabay-largest-online-dark-market-shut-down"]},
+    {"name": "IABs", "type": "capability", "notes": "Initial Access Brokers: criminals who breach networks and resell the foothold (RDP, VPN, webshell, valid creds) to ransomware crews - the wholesale tier that industrialized eCrime and feeds the darknet-market economy.", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories"]}
+  ],
+  "edges": [
+    {"from": "Nexus_Darkweb", "to": "Darknet_Market", "kind": "affiliates", "instrument": "data-as-a-service listing", "confidence": "high", "status": "public-record", "grade": "moderate", "source": ["https://www.bleepingcomputer.com/"]},
+    {"from": "Silk_Road", "to": "Darknet_Market", "kind": "affiliates", "instrument": "progenitor instance", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/usao-sdny/pr/ross-ulbricht-aka-dread-pirate-roberts-sentenced-manhattan-federal-court-life-prison"]},
+    {"from": "AlphaBay", "to": "Darknet_Market", "kind": "affiliates", "instrument": "peak-scale instance", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/opa/pr/alphabay-largest-online-dark-market-shut-down"]},
+    {"from": "Silk_Road", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "Ulbricht convicted 2015 (later pardoned)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/usao-sdny/pr/ross-ulbricht-aka-dread-pirate-roberts-sentenced-manhattan-federal-court-life-prison"]},
+    {"from": "AlphaBay", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "Operation Bayonet seizure 2017", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/opa/pr/alphabay-largest-online-dark-market-shut-down"]},
+    {"from": "Darknet_Market", "to": "IABs", "kind": "affiliates", "instrument": "access/data resale channel", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.justice.gov/opa/pr/alphabay-largest-online-dark-market-shut-down"]}
+  ]
+}

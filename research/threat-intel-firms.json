@@ -1,0 +1,201 @@
+{
+  "as_of": "2026-09-07",
+  "metadata": {
+    "title": "Threat-intel & IR firms in the IQT web (SIGINT-adjacent commercial)",
+    "layer": "evidenced",
+    "theme": "intel"
+  },
+  "notes": "Ported from bubble-map In-Q-Tel portfolio deep-dive. These are the commercial threat-intel / RF-geoint / OSINT firms IQT seeded - the protector/intel side of the same venture web as the surveillance vendors. A cheque is still not operational control.",
+  "entities": [
+    {
+      "name": "FireEye",
+      "type": "vendor",
+      "notes": "Threat-intel + incident response (Mandiant). Early In-Q-Tel investee. Mandiant published APT1 (2013) attributing PLA Unit 61398, and discovered the SolarWinds/SUNBURST intrusion (2020). Google acquired Mandiant (2022, ~$5.4B) into Google Cloud security.",
+      "capability_tier": "industrial",
+      "source": [
+        "https://www.mandiant.com/resources/reports"
+      ]
+    },
+    {
+      "name": "Cylance",
+      "type": "vendor",
+      "notes": "AI endpoint security (pre-CrowdStrike-era ML antivirus). In-Q-Tel-backed; acquired by BlackBerry (2018, ~$1.4B).",
+      "capability_tier": "commercial",
+      "source": [
+        "https://www.blackberry.com/us/en/company/newsroom"
+      ]
+    },
+    {
+      "name": "HawkEye_360",
+      "type": "vendor",
+      "notes": "Smallsat constellations geolocating RF emissions (ships going dark, jamming, comms) - space-based signals intelligence as a service. In-Q-Tel-backed; sells RF-geolocation to NGA/defense/IC.",
+      "capability_tier": "industrial",
+      "source": [
+        "https://www.he360.com/"
+      ]
+    },
+    {
+      "name": "Fivecast",
+      "type": "vendor",
+      "notes": "OSINT / social-media risk analytics used by IC + law enforcement. In-Q-Tel-backed (Australian-origin, Five Eyes).",
+      "capability_tier": "commercial",
+      "source": [
+        "https://www.fivecast.com/"
+      ]
+    },
+    {
+      "name": "NGA",
+      "type": "agency",
+      "notes": "National Geospatial-Intelligence Agency. Buyer of commercial geoint/RF (HawkEye 360, Planet-type imagery) - the tasking hub wiring commercial-space SIGINT-adjacent data into the IC.",
+      "source": [
+        "https://www.nga.mil/"
+      ]
+    },
+    {
+      "name": "BlackBerry",
+      "type": "vendor",
+      "notes": "Pivoted from handsets to security software; owns Cylance endpoint AI and QNX embedded OS.",
+      "source": [
+        "https://www.blackberry.com/"
+      ]
+    },
+    {
+      "name": "SIGINT_Collection",
+      "type": "capability",
+      "notes": "Signals intelligence - RF/comms interception and geolocation. Historically a state monopoly (NSA/GCHQ); HawkEye 360-class commercial constellations now sell RF-geoint as a service, blurring the state/commercial line.",
+      "source": [
+        "https://www.he360.com/"
+      ]
+    },
+    {
+      "name": "OSINT_Collection",
+      "type": "capability",
+      "notes": "Open-source / social-media intelligence (SOCMINT): harvesting and analytics over public data. Sold commercially (Fivecast) to IC + law enforcement - lower legal bar than SIGINT, expanding fast.",
+      "source": [
+        "https://www.fivecast.com/"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "In_Q_Tel",
+      "to": "Cylance",
+      "kind": "affiliates",
+      "instrument": "IQT investment",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://www.iqt.org/portfolio/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "HawkEye_360",
+      "kind": "affiliates",
+      "instrument": "IQT investment",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "fact",
+      "source": [
+        "https://www.iqt.org/portfolio/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Fivecast",
+      "kind": "affiliates",
+      "instrument": "IQT investment",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://www.iqt.org/portfolio/"
+      ]
+    },
+    {
+      "from": "Google",
+      "to": "FireEye",
+      "kind": "affiliates",
+      "instrument": "acquired Mandiant 2022 (~$5.4B)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "fact",
+      "source": [
+        "https://blog.google/products/google-cloud/google-completes-acquisition-of-mandiant/"
+      ]
+    },
+    {
+      "from": "FireEye",
+      "to": "SolarWinds",
+      "kind": "protects",
+      "instrument": "discovered SUNBURST intrusion (2020)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "fact",
+      "source": [
+        "https://www.mandiant.com/resources/blog/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor"
+      ]
+    },
+    {
+      "from": "FireEye",
+      "to": "APT1",
+      "kind": "attributed_to",
+      "instrument": "APT1 report (2013) -> PLA Unit 61398",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "fact",
+      "source": [
+        "https://www.mandiant.com/resources/reports/apt1-exposing-one-chinas-cyber-espionage-units"
+      ]
+    },
+    {
+      "from": "Cylance",
+      "to": "BlackBerry",
+      "kind": "affiliates",
+      "instrument": "acquired 2018",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "fact",
+      "source": [
+        "https://www.blackberry.com/us/en/company/newsroom"
+      ]
+    },
+    {
+      "from": "HawkEye_360",
+      "to": "NGA",
+      "kind": "affiliates",
+      "instrument": "commercial RF-geoint contracts",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://www.he360.com/"
+      ]
+    },
+    {
+      "from": "HawkEye_360",
+      "to": "SIGINT_Collection",
+      "kind": "has_capability",
+      "instrument": "commercial RF geolocation",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://www.he360.com/"
+      ]
+    },
+    {
+      "from": "Fivecast",
+      "to": "OSINT_Collection",
+      "kind": "has_capability",
+      "instrument": "SOCMINT/OSINT analytics",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://www.fivecast.com/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-09-04",
+  "metadata": {
+    "title": "CRQC, harvest-now-decrypt-later, trust-now-forge-later, silent Q-Day",
+    "layer": "evidenced",
+    "theme": "quantum"
+  },
+  "entities": [
+    {"name": "CRQC", "type": "quantum", "notes": "Cryptographically relevant quantum computer: enough logical qubits + error correction to run Shor against RSA-2048/ECC at operational cost. No public evidence one exists today. Resource estimates have compressed (20M -> <1M -> possibly ~100k physical, contested).", "capability_tier": "unknown", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"name": "HNDL", "type": "capability", "notes": "Harvest-Now-Decrypt-Later. NSA 2021 public warning: collect ciphertext now, decrypt after Q-Day. Damage to long-lived secrets is already incurred; only the decryption is deferred.", "capability_tier": "industrial", "source": ["https://media.defense.gov/2021/Aug/04/2002821837/-1/-1/0/CSI_CNSA_2.0_FAQ_.PDF"]},
+    {"name": "TNFL", "type": "capability", "notes": "Trust-Now-Forge-Later (integrity twin of HNDL). After Shor, public keys yield private keys: old signatures, certs, ePassport Passive Authentication become forgeable. HNDL breaks secrecy; TNFL breaks authentication.", "capability_tier": "industrial", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"name": "Silent_QDay", "type": "capability", "notes": "Strategic reading (graded): first CRQC owner has a concealment incentive. Public 2030/2035 deadlines assume an observable Q-Day. Not a claim that any actor has a CRQC.", "capability_tier": "unknown", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"name": "IBM_Quantum", "type": "vendor", "notes": "Public fault-tolerance roadmap (Starling ~2029 as vendor claim). Computing path, not a CRQC announcement.", "source": ["https://www.ibm.com/quantum/blog/ibm-quantum-roadmap"]},
+    {"name": "Google_Quantum", "type": "vendor", "notes": "Willow / supremacy claims; classical spoofing and a forged zkVM proof (Trail of Bits 2026) are the verification problem.", "source": ["https://blog.google/technology/research/google-willow-quantum-chip/"]},
+    {"name": "USTC_Quantum", "type": "affiliate", "notes": "China academic/quantum-comms lead (Micius, terrestrial QKD networks) in public reporting.", "source": ["https://english.cas.cn/"]},
+    {"name": "HQC", "type": "method", "notes": "NIST selected HQC (Mar 2025) as code-based backup KEM.", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]}
+  ],
+  "edges": [
+    {"from": "CRQC", "to": "RSA", "kind": "dies_under_crqc", "instrument": "Shor", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://arxiv.org/abs/quant-ph/9508027"]},
+    {"from": "CRQC", "to": "ECC", "kind": "dies_under_crqc", "instrument": "Shor", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://arxiv.org/abs/quant-ph/9508027"]},
+    {"from": "Upstream_Collection", "to": "HNDL", "kind": "harvests", "instrument": "store ciphertext now", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://media.defense.gov/2021/Aug/04/2002821837/-1/-1/0/CSI_CNSA_2.0_FAQ_.PDF"]},
+    {"from": "HNDL", "to": "RSA", "kind": "harvests", "instrument": "today's TLS/VPN recordings", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://media.defense.gov/2021/Aug/04/2002821837/-1/-1/0/CSI_CNSA_2.0_FAQ_.PDF"]},
+    {"from": "TNFL", "to": "ECC", "kind": "exploits", "instrument": "forge signatures after key recovery", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"from": "Silent_QDay", "to": "CRQC", "kind": "affiliates", "instrument": "concealment incentive (graded)", "confidence": "low", "status": "speculative", "grade": "speculative", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"from": "NIST", "to": "HQC", "kind": "standardizes", "instrument": "backup KEM selection 2025", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"from": "IBM_Quantum", "to": "CRQC", "kind": "has_capability", "instrument": "public FT roadmap (not a CRQC)", "confidence": "low", "status": "public-record", "grade": "weak", "source": ["https://www.ibm.com/quantum/blog/ibm-quantum-roadmap"]},
+    {"from": "AES_256", "to": "CRQC", "kind": "survives_crqc", "instrument": "Grover only", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"from": "ML_KEM", "to": "CRQC", "kind": "survives_crqc", "instrument": "designed against Shor", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://csrc.nist.gov/pubs/fips/203/final"]},
+    {"from": "Network_Segmentation", "to": "CRQC", "kind": "survives_crqc", "instrument": "not a public-key primitive", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/stopransomware"]},
+    {"from": "FIDO2_WebAuthn", "to": "CRQC", "kind": "dies_under_crqc", "instrument": "today's passkeys are often ECDSA; PQC-passkeys not deployed", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://fidoalliance.org/fido2/"]}
+  ]
+}

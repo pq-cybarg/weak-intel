@@ -1,0 +1,44 @@
+{
+  "as_of": "2026-09-04",
+  "metadata": {
+    "title": "CRQC supply chain: fabs, lithography, cryogenics, helium-3, rare earths, miners",
+    "layer": "evidenced",
+    "theme": "quantum",
+    "imported_from": "earnings-bubble geopolitics-chip-chokepoint-war + macro-critical-minerals + spec-quantum manufacturing chokepoint"
+  },
+  "entities": [
+    {"name": "GlobalFoundries", "type": "vendor", "notes": "Makes PsiQuantum Omega silicon-photonic chipset on 300mm wafers in New York. Quantum runs through classical fab chokepoints.", "source": ["https://thequantuminsider.com/2025/09/10/psiquantum-raises-1-billion-to-build-million-qubit-scale-fault-tolerant-quantum-computers/"]},
+    {"name": "TSMC", "type": "vendor", "notes": "~95% of leading-edge logic. ~80% of ASML EUV sales. Not a qubit maker; the classical fab the quantum story silently assumes stays open.", "source": ["https://finance.yahoo.com/news/china-hit-hard-dutch-export-093000191.html"]},
+    {"name": "ASML", "type": "vendor", "notes": "Sole EUV lithography maker. Required below ~7nm. Reported remote kill-switch on TSMC EUV (contested).", "source": ["https://www.theregister.com/2024/05/21/asml_kill_switch/"]},
+    {"name": "Zeiss_SMT", "type": "vendor", "notes": "ASML EUV optics monopoly partner. High-NA EUV 2026.", "source": ["https://finance.yahoo.com/news/china-hit-hard-dutch-export-093000191.html"]},
+    {"name": "Tokyo_Electron", "type": "vendor", "notes": "Japan deposition/etch/clean. Parallel equipment chokepoint.", "source": ["https://finance.yahoo.com/news/china-hit-hard-dutch-export-093000191.html"]},
+    {"name": "Helium3", "type": "capability", "notes": "Helium-3 for dilution-refrigerator mixtures. Scarce, nuclear-adjacent supply. Physical CRQC bottleneck the equity story rarely prices.", "source": ["https://thequantuminsider.com/2026/03/26/leading-quantum-computing-countries/"]},
+    {"name": "Dilution_Refrigerator", "type": "system", "notes": "Millikelvin cryostats for superconducting (and some ion) machines. Bluefors / Oxford Instruments class. Capacity is a queue, not a commodity.", "source": ["https://thequantuminsider.com/2026/03/26/leading-quantum-computing-countries/"]},
+    {"name": "Bluefors", "type": "vendor", "notes": "Finland. Dominant dilution-refrigerator supplier to superconducting labs.", "source": ["https://thequantuminsider.com/2026/03/26/leading-quantum-computing-countries/"]},
+    {"name": "Oxford_Instruments", "type": "vendor", "notes": "UK cryogenics / magnets. Superconducting-stack supplier.", "source": ["https://thequantuminsider.com/2026/03/26/leading-quantum-computing-countries/"]},
+    {"name": "MP_Materials", "type": "vendor", "notes": "US rare-earth miner (Mountain Pass). DoD-anchored supply response vs China REE processing (~90%).", "source": ["https://www.cnbc.com/2026/05/21/quantum-stocks--us-taking-equity-stakes.html"]},
+    {"name": "China_REE", "type": "capability", "notes": "China processes ~90% of rare earths, most gallium/germanium/antimony. 2024-25 export controls (suspended-but-keep-the-architecture). Magnets, cryo, defense.", "source": ["https://finance.yahoo.com/news/china-hit-hard-dutch-export-093000191.html"]},
+    {"name": "Gallium_Germanium", "type": "capability", "notes": "Chip/compound-semiconductor inputs. China bans to US (Dec 2024) as retaliation for lithography controls.", "source": ["https://finance.yahoo.com/news/china-hit-hard-dutch-export-093000191.html"]},
+    {"name": "SK_Hynix", "type": "vendor", "notes": "HBM chokepoint (Korea). Classical AI stack; quantum hybrid HPC (RIKEN/NVIDIA) still needs HBM.", "source": ["https://thequantuminsider.com/2026/03/26/leading-quantum-computing-countries/"]},
+    {"name": "SMIC", "type": "vendor", "notes": "PRC foundry. 7nm DUV multipatterning (Mate 60) without EUV at yield/cost penalty. EUV-parity claims contested.", "source": ["https://finance.yahoo.com/news/china-hit-hard-dutch-export-093000191.html"]},
+    {"name": "Australia", "type": "affiliate", "notes": "~A$1B anchoring PsiQuantum Brisbane utility-scale site. Also Pine Gap (intel).", "source": ["https://thequantuminsider.com/2026/05/21/psiquantum-signs-100-million-letter-of-intent-with-the-u-s-department-of-commerce/"]}
+  ],
+  "edges": [
+    {"from": "GlobalFoundries", "to": "PsiQuantum", "kind": "affiliates", "instrument": "Omega 300mm NY wafers", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://thequantuminsider.com/2025/09/10/psiquantum-raises-1-billion-to-build-million-qubit-scale-fault-tolerant-quantum-computers/"]},
+    {"from": "ASML", "to": "TSMC", "kind": "protects", "instrument": "EUV monopoly (~80% of EUV sales)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://finance.yahoo.com/news/china-hit-hard-dutch-export-093000191.html"]},
+    {"from": "Zeiss_SMT", "to": "ASML", "kind": "affiliates", "instrument": "EUV optics", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://finance.yahoo.com/news/china-hit-hard-dutch-export-093000191.html"]},
+    {"from": "Modality_Superconducting", "to": "Dilution_Refrigerator", "kind": "uses", "instrument": "millikelvin", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://thequantuminsider.com/2026/03/26/leading-quantum-computing-countries/"]},
+    {"from": "Dilution_Refrigerator", "to": "Helium3", "kind": "uses", "instrument": "He-3/He-4 mixture", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://thequantuminsider.com/2026/03/26/leading-quantum-computing-countries/"]},
+    {"from": "Bluefors", "to": "Dilution_Refrigerator", "kind": "protects", "instrument": "ships the fridge", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://thequantuminsider.com/2026/03/26/leading-quantum-computing-countries/"]},
+    {"from": "Oxford_Instruments", "to": "Dilution_Refrigerator", "kind": "protects", "instrument": "cryo/magnets", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://thequantuminsider.com/2026/03/26/leading-quantum-computing-countries/"]},
+    {"from": "Modality_Photonic", "to": "GlobalFoundries", "kind": "uses", "instrument": "PsiQuantum Omega path", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://thequantuminsider.com/2025/09/10/psiquantum-raises-1-billion-to-build-million-qubit-scale-fault-tolerant-quantum-computers/"]},
+    {"from": "China_REE", "to": "ASML", "kind": "dual_use", "instrument": "materials vs equipment mutual chokepoint", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://finance.yahoo.com/news/china-hit-hard-dutch-export-093000191.html"]},
+    {"from": "MP_Materials", "to": "China_REE", "kind": "protects", "instrument": "US mine/process response (slow)", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.cnbc.com/2026/05/21/quantum-stocks--us-taking-equity-stakes.html"]},
+    {"from": "Gallium_Germanium", "to": "TSMC", "kind": "uses", "instrument": "compound/chip inputs", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://finance.yahoo.com/news/china-hit-hard-dutch-export-093000191.html"]},
+    {"from": "Australia", "to": "PsiQuantum", "kind": "affiliates", "instrument": "~A$1B Brisbane anchor", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://thequantuminsider.com/2026/05/21/psiquantum-signs-100-million-letter-of-intent-with-the-u-s-department-of-commerce/"]},
+    {"from": "SK_Hynix", "to": "NVIDIA", "kind": "affiliates", "instrument": "HBM for hybrid HPC", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://thequantuminsider.com/2026/03/26/leading-quantum-computing-countries/"]},
+    {"from": "Tokyo_Electron", "to": "TSMC", "kind": "affiliates", "instrument": "deposition/etch", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://finance.yahoo.com/news/china-hit-hard-dutch-export-093000191.html"]},
+    {"from": "Dilution_Refrigerator", "to": "CRQC", "kind": "has_capability", "instrument": "superconducting path physical gate (not a cycle)", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://thequantuminsider.com/2026/03/26/leading-quantum-computing-countries/"]},
+    {"from": "GlobalFoundries", "to": "CRQC", "kind": "has_capability", "instrument": "photonic fab gate (not a cycle)", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://thequantuminsider.com/2025/09/10/psiquantum-raises-1-billion-to-build-million-qubit-scale-fault-tolerant-quantum-computers/"]}
+  ]
+}

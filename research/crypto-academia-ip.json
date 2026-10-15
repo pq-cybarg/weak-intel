@@ -1,0 +1,42 @@
+{
+  "as_of": "2026-09-05",
+  "metadata": {
+    "title": "Where the crypto came from: academic origins of PKI and PQC",
+    "layer": "evidenced",
+    "theme": "crypto"
+  },
+  "notes": "Ported from bubble-map university-IP + academia-abroad, crypto/PQC slice only (biometrics/adtech branches left in the other map). Ties the deployed standards back to the labs and people that produced them - and forward to the CRQC that threatens the classical ones.",
+  "entities": [
+    {"name": "Caltech", "type": "university", "notes": "Robert McEliece (Caltech/JPL) proposed the code-based McEliece cryptosystem (1978) - ~47 years unbroken, a leading conservative PQC candidate.", "source": ["https://en.wikipedia.org/wiki/McEliece_cryptosystem"]},
+    {"name": "Brown_University", "type": "university", "notes": "Hoffstein, Pipher, Silverman built NTRU (1996) - the first practical lattice-based public-key scheme and a direct ancestor of today's lattice PQC.", "source": ["https://en.wikipedia.org/wiki/NTRU"]},
+    {"name": "TU_Darmstadt", "type": "university", "notes": "Buchmann/Dahmen/Huelsing built XMSS (eXtended Merkle Signature Scheme) - stateful hash-based signatures, the most conservative PQC signatures (RFC 8391).", "source": ["https://datatracker.ietf.org/doc/html/rfc8391"]},
+    {"name": "Tel_Aviv_University", "type": "university", "notes": "Oded Regev (TAU/NYU) introduced Learning With Errors (LWE, 2005) - the hardness assumption underpinning the NIST lattice standards.", "source": ["https://en.wikipedia.org/wiki/Learning_with_errors"]},
+    {"name": "Max_Planck", "type": "university", "notes": "Max Planck Institute for Security & Privacy (Peter Schwabe) co-authored CRYSTALS-Kyber/Dilithium (ML-KEM/ML-DSA). With Radboud + Ru Bochum, the European academic core of PQC standardization.", "source": ["https://en.wikipedia.org/wiki/Kyber"]},
+    {"name": "University_of_Waterloo", "type": "university", "notes": "Institute for Quantum Computing + Centre for Applied Cryptographic Research (Menezes et al.; ECC/PQC). A historic crypto powerhouse whose co-op pipeline feeds Big Tech; with Perimeter Institute anchors Canada's quantum sector.", "source": ["https://uwaterloo.ca/institute-for-quantum-computing/"]},
+    {"name": "USTC", "type": "university", "notes": "University of Science and Technology of China (Jian-Wei Pan). Leads China's quantum program: Micius quantum-comms satellite, Jiuzhang photonic, Zuchongzhi superconducting. Central to state quantum + AI strategy (CAS).", "source": ["https://en.wikipedia.org/wiki/Jian-Wei_Pan"]},
+    {"name": "McEliece_Cryptosystem", "type": "standard", "notes": "Code-based crypto - a main PQC family (Classic McEliece; HQC), the conservative non-lattice branch. Long keys but decades of cryptanalysis behind it.", "source": ["https://en.wikipedia.org/wiki/McEliece_cryptosystem"]},
+    {"name": "NTRU", "type": "standard", "notes": "First practical lattice cryptosystem. IP passed NTRU Cryptosystems -> Security Innovation -> OnBoard Security -> Qualcomm (2019). NIST PQC round-3 finalist and conceptual precursor to ML-KEM/ML-DSA.", "source": ["https://en.wikipedia.org/wiki/NTRU"]},
+    {"name": "XMSS", "type": "standard", "notes": "Hash-based stateful signatures (RFC 8391). With LMS, the hash-only-assumption branch that became SLH-DSA (FIPS 205). Deployed by the Quantum Resistant Ledger.", "source": ["https://datatracker.ietf.org/doc/html/rfc8391"]},
+    {"name": "LWE", "type": "method", "notes": "Learning With Errors / Module-LWE - the mathematical basis of ML-KEM (Kyber) and ML-DSA (Dilithium), the primary NIST PQC standards.", "source": ["https://en.wikipedia.org/wiki/Learning_with_errors"]}
+  ],
+  "edges": [
+    {"from": "MIT", "to": "RSA", "kind": "authored", "instrument": "RSA 1977 (patent US4405829, assigned to MIT)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://patents.google.com/patent/US4405829A/en"]},
+    {"from": "Caltech", "to": "McEliece_Cryptosystem", "kind": "authored", "instrument": "McEliece 1978", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://en.wikipedia.org/wiki/McEliece_cryptosystem"]},
+    {"from": "Brown_University", "to": "NTRU", "kind": "authored", "instrument": "NTRU 1996", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://en.wikipedia.org/wiki/NTRU"]},
+    {"from": "TU_Darmstadt", "to": "XMSS", "kind": "authored", "instrument": "XMSS (RFC 8391)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://datatracker.ietf.org/doc/html/rfc8391"]},
+    {"from": "Tel_Aviv_University", "to": "LWE", "kind": "authored", "instrument": "Regev, LWE 2005", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://en.wikipedia.org/wiki/Learning_with_errors"]},
+    {"from": "Max_Planck", "to": "ML_KEM", "kind": "authored", "instrument": "co-authored CRYSTALS-Kyber", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://en.wikipedia.org/wiki/Kyber"]},
+    {"from": "Max_Planck", "to": "ML_DSA", "kind": "authored", "instrument": "co-authored CRYSTALS-Dilithium", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://en.wikipedia.org/wiki/Kyber"]},
+    {"from": "University_of_Waterloo", "to": "ECC", "kind": "authored", "instrument": "CACR/Menezes - ECC + applied crypto", "confidence": "high", "status": "public-record", "grade": "moderate", "source": ["https://uwaterloo.ca/institute-for-quantum-computing/"]},
+    {"from": "LWE", "to": "ML_KEM", "kind": "standardizes", "instrument": "Module-LWE basis of Kyber", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://en.wikipedia.org/wiki/Kyber"]},
+    {"from": "LWE", "to": "ML_DSA", "kind": "standardizes", "instrument": "Module-LWE basis of Dilithium", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://en.wikipedia.org/wiki/Kyber"]},
+    {"from": "NTRU", "to": "Lattice", "kind": "affiliates", "instrument": "lattice-crypto ancestor", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://en.wikipedia.org/wiki/NTRU"]},
+    {"from": "NTRU", "to": "Qualcomm", "kind": "affiliates", "instrument": "IP acquired 2019", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://en.wikipedia.org/wiki/NTRU"]},
+    {"from": "McEliece_Cryptosystem", "to": "NIST", "kind": "standardizes", "instrument": "Classic McEliece PQC candidate", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"from": "XMSS", "to": "SLH_DSA", "kind": "affiliates", "instrument": "hash-based branch -> FIPS 205", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://csrc.nist.gov/pubs/fips/205/final"]},
+    {"from": "CRQC", "to": "McEliece_Cryptosystem", "kind": "survives_crqc", "instrument": "code-based, no known Shor break", "confidence": "high", "status": "assessment", "grade": "moderate", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"from": "CRQC", "to": "XMSS", "kind": "survives_crqc", "instrument": "hash-based, no known Shor break", "confidence": "high", "status": "assessment", "grade": "moderate", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"from": "USTC", "to": "CRQC", "kind": "has_capability", "instrument": "Jiuzhang/Zuchongzhi quantum program", "confidence": "moderate", "status": "public-record", "grade": "moderate", "notes": "Quantum-advantage demos, not a CRQC. Capability edge, not a break.", "source": ["https://en.wikipedia.org/wiki/Jian-Wei_Pan"]},
+    {"from": "USTC", "to": "China", "kind": "affiliates", "instrument": "Chinese Academy of Sciences", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://en.wikipedia.org/wiki/Jian-Wei_Pan"]}
+  ]
+}

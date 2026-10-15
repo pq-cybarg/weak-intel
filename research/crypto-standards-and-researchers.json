@@ -1,0 +1,42 @@
+{
+  "as_of": "2026-09-04",
+  "metadata": {
+    "title": "Cryptographic methods, standards, and the people who wrote them",
+    "layer": "evidenced",
+    "theme": "crypto"
+  },
+  "entities": [
+    {"name": "RSA", "type": "method", "notes": "Public-key encryption/signatures; broken by Shor's algorithm on a CRQC.", "source": ["https://en.wikipedia.org/wiki/RSA_(cryptosystem)"]},
+    {"name": "ECC", "type": "method", "notes": "Elliptic-curve public key (ECDSA/ECDH/Ed25519). Also Shor-vulnerable.", "source": ["https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf"]},
+    {"name": "AES_256", "type": "method", "notes": "Symmetric block cipher. Grover gives quadratic speedup only; 256-bit remains the post-quantum symmetric baseline.", "source": ["https://csrc.nist.gov/publications/detail/fips/197/final"]},
+    {"name": "SHA_2", "type": "method", "notes": "Hash family. Grover-affected but not Shor-broken.", "source": ["https://csrc.nist.gov/publications/detail/fips/180/4/final"]},
+    {"name": "ML_KEM", "type": "method", "notes": "NIST FIPS 203 (CRYSTALS-Kyber) lattice KEM. Primary PQC encryption primitive.", "source": ["https://csrc.nist.gov/pubs/fips/203/final"]},
+    {"name": "ML_DSA", "type": "method", "notes": "NIST FIPS 204 (CRYSTALS-Dilithium) lattice signatures.", "source": ["https://csrc.nist.gov/pubs/fips/204/final"]},
+    {"name": "SLH_DSA", "type": "method", "notes": "NIST FIPS 205 (SPHINCS+) hash-based signatures. Conservative PQC backup.", "source": ["https://csrc.nist.gov/pubs/fips/205/final"]},
+    {"name": "Dual_EC_DRBG", "type": "method", "notes": "NIST SP 800-90 Dual_EC_DRBG. Public controversy over NSA-influenced constants; withdrawn. Historical dual-use of a standard.", "source": ["https://csrc.nist.gov/News/2013/Supplemental-IETF-Statement-on-the-NSA"]},
+    {"name": "NIST", "type": "affiliate", "notes": "US standards body for FIPS crypto. Runs the PQC competition and Dual_EC history.", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"name": "IETF", "type": "affiliate", "notes": "TLS, IPsec, and protocol crypto. Hybrid TLS (X25519MLKEM768) work in progress.", "source": ["https://datatracker.ietf.org/doc/draft-ietf-tls-hybrid-design/"]},
+    {"name": "ISO_IEC_JTC1_SC27", "type": "affiliate", "notes": "ISO/IEC SC 27 information security techniques.", "source": ["https://www.iso.org/committee/45306.html"]},
+    {"name": "NSA_CNSA2", "type": "standard", "notes": "NSA Commercial National Security Algorithm Suite 2.0: mandates PQC transition for NSS.", "source": ["https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF"]},
+    {"name": "Ron_Rivest", "type": "researcher", "notes": "RSA co-author; MIT.", "source": ["https://people.csail.mit.edu/rivest/"]},
+    {"name": "Adi_Shamir", "type": "researcher", "notes": "RSA co-author; Weizmann.", "source": ["https://www.wisdom.weizmann.ac.il/~shamir/"]},
+    {"name": "Whitfield_Diffie", "type": "researcher", "notes": "Public-key exchange; later public critic of key-escrow.", "source": ["https://en.wikipedia.org/wiki/Whitfield_Diffie"]},
+    {"name": "Daniel_J_Bernstein", "type": "researcher", "notes": "NaCl/libsodium, Ed25519, SPHINCS; public Dual_EC critic.", "source": ["https://blog.cr.yp.to/"]},
+    {"name": "Peter_Shor", "type": "researcher", "notes": "Shor's algorithm: polynomial-time factoring and discrete log on a quantum computer.", "source": ["https://arxiv.org/abs/quant-ph/9508027"]}
+  ],
+  "edges": [
+    {"from": "Ron_Rivest", "to": "RSA", "kind": "authored", "instrument": "1977 RSA paper", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://people.csail.mit.edu/rivest/Rsapaper.pdf"]},
+    {"from": "Adi_Shamir", "to": "RSA", "kind": "authored", "instrument": "1977 RSA paper", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://people.csail.mit.edu/rivest/Rsapaper.pdf"]},
+    {"from": "Whitfield_Diffie", "to": "ECC", "kind": "authored", "instrument": "public-key exchange lineage (DH; ECC is the modern DH analogue)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://ee.stanford.edu/~hellman/publications/24.pdf"]},
+    {"from": "Peter_Shor", "to": "RSA", "kind": "dies_under_crqc", "instrument": "Shor's algorithm", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://arxiv.org/abs/quant-ph/9508027"]},
+    {"from": "Peter_Shor", "to": "ECC", "kind": "dies_under_crqc", "instrument": "Shor's algorithm (ECDLP)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://arxiv.org/abs/quant-ph/9508027"]},
+    {"from": "NIST", "to": "ML_KEM", "kind": "standardizes", "instrument": "FIPS 203", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://csrc.nist.gov/pubs/fips/203/final"]},
+    {"from": "NIST", "to": "ML_DSA", "kind": "standardizes", "instrument": "FIPS 204", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://csrc.nist.gov/pubs/fips/204/final"]},
+    {"from": "NIST", "to": "SLH_DSA", "kind": "standardizes", "instrument": "FIPS 205", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://csrc.nist.gov/pubs/fips/205/final"]},
+    {"from": "NIST", "to": "Dual_EC_DRBG", "kind": "standardizes", "instrument": "SP 800-90 Dual_EC (withdrawn)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://csrc.nist.gov/News/2013/Supplemental-IETF-Statement-on-the-NSA"]},
+    {"from": "Daniel_J_Bernstein", "to": "SLH_DSA", "kind": "authored", "instrument": "SPHINCS lineage", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://sphincs.org/"]},
+    {"from": "NSA_CNSA2", "to": "ML_KEM", "kind": "standardizes", "instrument": "CNSA 2.0 PQC requirement", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://media.defense.gov/2022/Sep/07/2003071834/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS_.PDF"]},
+    {"from": "AES_256", "to": "CRQC", "kind": "survives_crqc", "instrument": "Grover only (quadratic)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://csrc.nist.gov/projects/post-quantum-cryptography"]},
+    {"from": "IETF", "to": "ML_KEM", "kind": "standardizes", "instrument": "hybrid TLS drafts", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://datatracker.ietf.org/doc/draft-ietf-tls-hybrid-design/"]}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "as_of": "2026-09-05",
+  "metadata": {
+    "title": "Hacktivism, leaktivism, and state-aligned DDoS crews",
+    "layer": "evidenced",
+    "theme": "actor"
+  },
+  "notes": "Ported/expanded from bubble-map #239 hacktivist catalog. State-aligned vs ideological vs notoriety branches. Attribution of banner-crews is deliberately hard; contested links are graded.",
+  "entities": [
+    {"name": "Cult_of_Dead_Cow", "type": "affiliate", "notes": "cDc (1984-). Coined 'hacktivism', shipped Back Orifice (1998), spun up Hacktivismo (anti-censorship). Ideological ancestor of the leaderless movements.", "capability_tier": "artisan", "source": ["https://en.wikipedia.org/wiki/Cult_of_the_Dead_Cow"]},
+    {"name": "The_Com", "type": "criminal", "notes": "Loose English-speaking cybercrime/notoriety community; the substrate from which both LAPSUS$ and Scattered Spider emerged. Social-engineering-first, SIM-swaps, insider bribery.", "capability_tier": "artisan", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"]},
+    {"name": "NoName057_16", "type": "criminal", "notes": "Pro-Russia DDoS crew running the crowdsourced 'DDoSia' project (paid volunteers). Persistent low-level attacks on European targets; EU/US 'Operation Eastwood' disruption 2025.", "capability_tier": "artisan", "source": ["https://www.europol.europa.eu/media-press/newsroom"]},
+    {"name": "Anonymous_Sudan", "type": "criminal", "notes": "CONTESTED: branded as Sudanese hacktivists but researchers linked it to Russia/Killnet. Ran powerful DDoS on Microsoft 365, OpenAI, X (2023). DOJ indicted two Sudanese brothers (2024).", "capability_tier": "artisan", "source": ["https://www.justice.gov/opa/pr/two-sudanese-nationals-indicted-alleged-role-anonymous-sudan-cyberattacks-hospitals"]},
+    {"name": "Guacamaya", "type": "affiliate", "notes": "Latin American hacktivists behind mega-leaks of military/police archives (Mexico's SEDENA 'Guacamaya Leaks', plus Chile, Peru, Colombia, El Salvador). Environmental/anti-extractivism motivated.", "capability_tier": "artisan", "source": ["https://en.wikipedia.org/wiki/Guacamaya_(hacktivist_group)"]},
+    {"name": "Ukraine", "type": "affiliate", "notes": "State that openly mobilized a volunteer cyber militia (IT Army) after the 2022 invasion - the mirror image of Russia's deniable nationalist crews.", "source": ["https://en.wikipedia.org/wiki/IT_Army_of_Ukraine"]}
+  ],
+  "edges": [
+    {"from": "Cult_of_Dead_Cow", "to": "Anonymous", "kind": "affiliates", "instrument": "ideological lineage", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://en.wikipedia.org/wiki/Cult_of_the_Dead_Cow"]},
+    {"from": "Anonymous", "to": "Russia", "kind": "targets", "instrument": "#OpRussia (self-claimed banner ops)", "confidence": "moderate", "status": "public-record", "grade": "weak", "notes": "Attribution to any coherent group is impossible by design.", "source": ["https://www.bbc.com/news/technology-60598816"]},
+    {"from": "The_Com", "to": "Scattered_Spider", "kind": "affiliates", "instrument": "community of origin", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"]},
+    {"from": "The_Com", "to": "LAPSUS", "kind": "affiliates", "instrument": "community of origin", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/sites/default/files/2023-08/CSRB_Lapsus%24_508c.pdf"]},
+    {"from": "NoName057_16", "to": "Russia", "kind": "affiliates", "instrument": "pro-Russia, state-aligned (not state-run)", "confidence": "high", "status": "public-record", "grade": "moderate", "source": ["https://www.europol.europa.eu/media-press/newsroom"]},
+    {"from": "NoName057_16", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "Operation Eastwood disruption 2025", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.europol.europa.eu/media-press/newsroom"]},
+    {"from": "Anonymous_Sudan", "to": "Russia", "kind": "affiliates", "instrument": "researcher-linked to Killnet (contested)", "confidence": "moderate", "status": "public-record", "grade": "weak", "source": ["https://www.justice.gov/opa/pr/two-sudanese-nationals-indicted-alleged-role-anonymous-sudan-cyberattacks-hospitals"]},
+    {"from": "Anonymous_Sudan", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "DOJ indictment of two brothers 2024", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/opa/pr/two-sudanese-nationals-indicted-alleged-role-anonymous-sudan-cyberattacks-hospitals"]},
+    {"from": "IT_Army_of_Ukraine", "to": "Ukraine", "kind": "affiliates", "instrument": "government-endorsed volunteers", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://en.wikipedia.org/wiki/IT_Army_of_Ukraine"]},
+    {"from": "IT_Army_of_Ukraine", "to": "Russia", "kind": "targets", "instrument": "sustained volunteer DDoS/leaks", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://en.wikipedia.org/wiki/IT_Army_of_Ukraine"]},
+    {"from": "Killnet", "to": "NoName057_16", "kind": "affiliates", "instrument": "state-aligned DDoS-hacktivism branch", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.europol.europa.eu/media-press/newsroom"]},
+    {"from": "Guacamaya", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "SEDENA/military archive mega-leaks exposed states", "confidence": "moderate", "status": "public-record", "grade": "moderate", "notes": "Leak targets, not the crew, faced consequences; crew uncharged.", "source": ["https://en.wikipedia.org/wiki/Guacamaya_(hacktivist_group)"]}
+  ]
+}

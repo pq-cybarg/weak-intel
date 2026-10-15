@@ -1,0 +1,36 @@
+{
+  "as_of": "2026-09-05",
+  "metadata": {
+    "title": "XFELs and Xarion: science-scale free-electron lasers vs IQT laser-acoustics",
+    "layer": "evidenced",
+    "theme": "intel"
+  },
+  "entities": [
+    {"name": "Xarion_Laser_Acoustics", "type": "vendor", "notes": "Vienna. Optical microphone / laser-ultrasound sensing (no membrane). IQT Wikipedia infrastructure list. Not an XFEL and not a lithography light source. Sensing/NDT, not a 3 km accelerator.", "lat": 48.21, "lon": 16.37, "source": ["https://en.wikipedia.org/wiki/In-Q-Tel", "https://xarion.com"]},
+    {"name": "SACLA", "type": "facility", "notes": "SPring-8 Angstrom Compact Free Electron Laser. Harima Science Garden City (Sayo, Hyogo), Japan. RIKEN-operated hard XFEL: electrons accelerated to produce ultra-short, intense X-ray pulses for atomic structure, ultrafast chemistry, and materials. Compact relative to km-scale FELs; still a user-science machine, not a fab tool.", "lat": 34.944, "lon": 134.427, "source": ["https://en.wikipedia.org/wiki/SACLA", "https://www.riken.jp/en/collab/resources/sacla/", "https://xfel.riken.jp/eng/sacla/index00.html"]},
+    {"name": "SPring_8", "type": "facility", "notes": "RIKEN/JASRI synchrotron on the same Harima campus as SACLA. Storage-ring X-rays complementary to the XFEL.", "lat": 34.944, "lon": 134.427, "source": ["https://www.riken.jp/en/collab/resources/sacla/"]},
+    {"name": "European_XFEL", "type": "facility", "notes": "European X-Ray Free-Electron Laser. 3.4 km superconducting linac from DESY (Hamburg-Bahrenfeld) to the Schenefeld campus. Up to 17.5 GeV, ~27,000 pulses/s. 12 member states. User facility for biomolecules, materials, ultrafast dynamics. Not a lithography scanner.", "lat": 53.589, "lon": 9.829, "source": ["https://www.xfel.eu/", "https://en.wikipedia.org/wiki/European_XFEL", "https://www.xfel.eu/facility/overview/facts_amp_figures/index_eng.html"]},
+    {"name": "DESY", "type": "affiliate", "notes": "Deutsches Elektronen-Synchrotron, Hamburg. Hosts the European XFEL injector/accelerator; ~240 DESY staff run the linac. FLASH is DESY's own (softer) FEL.", "lat": 53.576, "lon": 9.879, "source": ["https://www.xfel.eu/facility/overview/facts_amp_figures/index_eng.html"]},
+    {"name": "LCLS", "type": "facility", "notes": "Linac Coherent Light Source at SLAC, Menlo Park. US hard XFEL; LCLS-II superconducting upgrade. Science user facility, same physics family as SACLA and European XFEL.", "lat": 37.417, "lon": -122.204, "source": ["https://lcls.slac.stanford.edu/", "https://en.wikipedia.org/wiki/Linac_Coherent_Light_Source"]},
+    {"name": "SLAC", "type": "affiliate", "notes": "SLAC National Accelerator Laboratory. Operates LCLS.", "lat": 37.417, "lon": -122.204, "source": ["https://lcls.slac.stanford.edu/"]},
+    {"name": "SwissFEL", "type": "facility", "notes": "Paul Scherrer Institute, Villigen. Hard/soft XFEL in the same global set as SACLA, LCLS, European XFEL.", "lat": 47.54, "lon": 8.22, "source": ["https://www.xfel.eu/"]},
+    {"name": "PAL_XFEL", "type": "facility", "notes": "Pohang Accelerator Laboratory, Korea. Hard XFEL.", "lat": 36.02, "lon": 129.32, "source": ["https://www.xfel.eu/"]}
+  ],
+  "edges": [
+    {"from": "In_Q_Tel", "to": "Xarion_Laser_Acoustics", "kind": "affiliates", "instrument": "Wikipedia IQT infrastructure list", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://en.wikipedia.org/wiki/In-Q-Tel"]},
+    {"from": "RIKEN", "to": "SACLA", "kind": "hosted_at", "instrument": "operator (Harima / SPring-8 campus)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.riken.jp/en/collab/resources/sacla/"]},
+    {"from": "SACLA", "to": "SPring_8", "kind": "hosted_at", "instrument": "same Harima campus", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.riken.jp/en/collab/resources/sacla/"]},
+    {"from": "SACLA", "to": "Free_Electron_Laser", "kind": "uses", "instrument": "hard XFEL (Angstrom compact)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://en.wikipedia.org/wiki/SACLA"]},
+    {"from": "European_XFEL", "to": "Free_Electron_Laser", "kind": "uses", "instrument": "superconducting hard XFEL", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.xfel.eu/"]},
+    {"from": "DESY", "to": "European_XFEL", "kind": "hosted_at", "instrument": "linac from DESY Bahrenfeld to Schenefeld hall", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.xfel.eu/facility/overview/facts_amp_figures/index_eng.html"]},
+    {"from": "LCLS", "to": "Free_Electron_Laser", "kind": "uses", "instrument": "US hard XFEL", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://lcls.slac.stanford.edu/"]},
+    {"from": "SLAC", "to": "LCLS", "kind": "hosted_at", "instrument": "operator", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://lcls.slac.stanford.edu/"]},
+    {"from": "SwissFEL", "to": "Free_Electron_Laser", "kind": "uses", "instrument": "PSI Villigen", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.xfel.eu/"]},
+    {"from": "PAL_XFEL", "to": "Free_Electron_Laser", "kind": "uses", "instrument": "Pohang", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.xfel.eu/"]},
+    {"from": "xLight", "to": "Free_Electron_Laser", "kind": "uses", "instrument": "industrial FEL *source* for EUV scanners, not a science XFEL hall", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.xlight.com/technology"]},
+    {"from": "xLight", "to": "European_XFEL", "kind": "affiliates", "instrument": "same FEL physics family; different GTM (fab light utility vs user-science beamline)", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.xlight.com/technology", "https://www.xfel.eu/"]},
+    {"from": "xLight", "to": "SACLA", "kind": "affiliates", "instrument": "same FEL physics family; compact science XFEL vs industrial EUV source", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.xlight.com/technology", "https://en.wikipedia.org/wiki/SACLA"]},
+    {"from": "Substrate", "to": "XRay_Lithography", "kind": "uses", "instrument": "X-ray patterning claim; not a beamline user of SACLA/EuXFEL", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://substrate.com/our-purpose"]},
+    {"from": "Xarion_Laser_Acoustics", "to": "Free_Electron_Laser", "kind": "affiliates", "instrument": "name collision risk only: laser-ultrasound sensing, not an XFEL", "confidence": "high", "status": "public-record", "grade": "strong", "notes": "Do not collapse Xarion into SACLA/EuXFEL.", "source": ["https://xarion.com", "https://en.wikipedia.org/wiki/In-Q-Tel"]}
+  ]
+}

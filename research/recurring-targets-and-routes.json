@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-09-04",
+  "metadata": {
+    "title": "Recurring targets, routes, and the systems they concentrate on",
+    "layer": "evidenced",
+    "theme": "apt"
+  },
+  "entities": [
+    {"name": "Active_Directory", "type": "system", "notes": "Windows identity plane. Kerberos/NTLM/Golden Ticket. Recurring because it IS the network.", "source": ["https://attack.mitre.org/tactics/TA0006/"]},
+    {"name": "Microsoft_Exchange", "type": "system", "notes": "ProxyLogon/ProxyShell/ProxyNotShell mass n-days. Mail as both data and routing.", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-062a"]},
+    {"name": "Edge_VPN", "type": "system", "notes": "Ivanti/Pulse, Fortinet, Citrix, Cisco ASA. Unpatched appliances sold by IABs.", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-060b"]},
+    {"name": "Helpdesk_Identity", "type": "system", "notes": "Human reset path. Scattered Spider / LAPSUS$ vishing. MFA that can be social-engineered is not phishing-resistant.", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"]},
+    {"name": "SMB_SMBv1", "type": "system", "notes": "EternalBlue surface. Still appears on KEV-class worms when unpatched.", "source": ["https://www.cisa.gov/news-events/alerts/2017/05/12/indicators-associated-wannacry-ransomware"]},
+    {"name": "Telecom_Carriers", "type": "system", "notes": "Salt Typhoon: lawful-intercept systems at US carriers.", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-326a"]},
+    {"name": "Software_Update_Trust", "type": "system", "notes": "SolarWinds, 3CX, xz-utils. The route is the signature on the update.", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-008a"]},
+    {"name": "MOVEit_Transfer", "type": "system", "notes": "Cl0p 2023 mass data-extortion. File-transfer concentration.", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158a"]},
+    {"name": "Power_Grid_ICS", "type": "system", "notes": "Sandworm Ukraine 2015/16; Volt Typhoon pre-positioning. OT as strategic target.", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a"]},
+    {"name": "Mobile_Messaging", "type": "system", "notes": "iMessage/WhatsApp zero-click (Pegasus). The phone is the person.", "source": ["https://citizenlab.ca/2021/07/the-pegasus-project/"]}
+  ],
+  "edges": [
+    {"from": "APT28_FancyBear", "to": "Microsoft_Exchange", "kind": "targets", "instrument": "spearphish + n-day mail", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://attack.mitre.org/groups/G0007/"]},
+    {"from": "Volt_Typhoon", "to": "Power_Grid_ICS", "kind": "targets", "instrument": "living-off-the-land pre-position", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a"]},
+    {"from": "Salt_Typhoon", "to": "Telecom_Carriers", "kind": "targets", "instrument": "LI/wiretap systems", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-326a"]},
+    {"from": "Scattered_Spider", "to": "Helpdesk_Identity", "kind": "targets", "instrument": "vishing/MFA bypass", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"]},
+    {"from": "LockBit", "to": "Active_Directory", "kind": "targets", "instrument": "domain-wide encryption", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-165a"]},
+    {"from": "LockBit", "to": "Edge_VPN", "kind": "route", "instrument": "IAB-sold appliance access", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-061a"]},
+    {"from": "WannaCry", "to": "SMB_SMBv1", "kind": "targets", "instrument": "EternalBlue", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.cisa.gov/news-events/alerts/2017/05/12/indicators-associated-wannacry-ransomware"]},
+    {"from": "NotPetya", "to": "SMB_SMBv1", "kind": "targets", "instrument": "EternalBlue + MeDoc supply chain", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/opa/pr/six-russian-gru-officers-charged-connection-worldwide-deployment"]},
+    {"from": "SUNBURST", "to": "Software_Update_Trust", "kind": "route", "instrument": "signed Orion update", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-008a"]},
+    {"from": "Cl0p", "to": "MOVEit_Transfer", "kind": "targets", "instrument": "2023 mass extortion", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158a"]},
+    {"from": "Pegasus", "to": "Mobile_Messaging", "kind": "targets", "instrument": "zero-click", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://citizenlab.ca/2021/07/the-pegasus-project/"]},
+    {"from": "Sandworm", "to": "Power_Grid_ICS", "kind": "targets", "instrument": "Ukraine blackouts", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://attack.mitre.org/groups/G0034/"]},
+    {"from": "Conti", "to": "Active_Directory", "kind": "targets", "instrument": "big-game hunting", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-265a"]}
+  ]
+}

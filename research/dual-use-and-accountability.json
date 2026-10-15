@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-09-04",
+  "metadata": {
+    "title": "Dual-use doors, leak-and-boomerang, got-away-with vs not",
+    "layer": "evidenced",
+    "theme": "dual-use"
+  },
+  "entities": [
+    {"name": "dual_use_door", "type": "capability", "notes": "A mandated or hoarded access channel that cannot be made exclusive to the intended user. CALEA LI, Dual_EC, stockpiled 0-days.", "capability_tier": "industrial", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-326a"]},
+    {"name": "got_away", "type": "capability", "notes": "Sink node: public-record delayed exposure or non-accountability. Not a finding of innocence or guilt.", "source": ["https://csrc.nist.gov/News/2013/Supplemental-IETF-Statement-on-the-NSA"]},
+    {"name": "did_not_get_away", "type": "capability", "notes": "Sink node: public disruption, indictment, leak, or takedown.", "source": ["https://www.europol.europa.eu/media-press/newsroom/news/worlds-most-dangerous-malware-emotet-disrupted-through-global-action"]},
+    {"name": "Shadow_Brokers", "type": "apt", "notes": "2016-17 dump of Equation-class tools including EternalBlue. Identity unresolved (graded).", "capability_tier": "unknown", "source": ["https://www.cisa.gov/news-events/alerts/2017/05/12/indicators-associated-wannacry-ransomware"]},
+    {"name": "Crypto_AG", "type": "vendor", "notes": "Swiss cipher-machine firm. 2020 WaPo/ZDF: CIA/BND-owned Operation Rubicon. Decades of allied readability of customers' traffic.", "source": ["https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/"]},
+    {"name": "Operation_Rubicon", "type": "capability", "notes": "CIA/BND ownership of Crypto AG (declassified/reporting 2020). Historical dual-use of a commercial standard product.", "capability_tier": "industrial", "source": ["https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/"]},
+    {"name": "SolarWinds", "type": "vendor", "notes": "Orion platform. SUNBURST supply-chain 2020. Clear-world software as APT route.", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-008a"]},
+    {"name": "APT1", "type": "apt", "notes": "PLA Unit 61398. Mandiant 2013 first public naming of a state military hacking unit. DOJ 2014 indictments.", "capability_tier": "industrial", "source": ["https://www.mandiant.com/resources/reports/apt1-exposing-one-chinas-cyber-espionage-units"]},
+    {"name": "Turla", "type": "apt", "notes": "FSB-linked Snake implant. FBI Operation MEDUSA 2023 dismantled Snake.", "capability_tier": "industrial", "source": ["https://www.justice.gov/opa/pr/us-dismantles-snake-malware-network-operated-russias-fsb-cyber-unit"]},
+    {"name": "Vault7", "type": "capability", "notes": "WikiLeaks 2017 CIA tooling dump. Analog of Shadow Brokers for CIA.", "source": ["https://wikileaks.org/ciav7p1/"]}
+  ],
+  "edges": [
+    {"from": "Dual_EC_DRBG", "to": "got_away", "kind": "got_away", "instrument": "years in NIST SP 800-90 before withdrawal", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://csrc.nist.gov/News/2013/Supplemental-IETF-Statement-on-the-NSA"]},
+    {"from": "Crypto_AG", "to": "got_away", "kind": "got_away", "instrument": "decades before 2020 exposure", "confidence": "high", "status": "declassified", "grade": "strong", "source": ["https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/"]},
+    {"from": "Crypto_AG", "to": "Operation_Rubicon", "kind": "uses", "instrument": "ownership/operation", "confidence": "high", "status": "declassified", "grade": "strong", "source": ["https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/"]},
+    {"from": "Equation_Group", "to": "Shadow_Brokers", "kind": "did_not_get_away", "instrument": "tooling leaked", "confidence": "moderate", "status": "alleged", "grade": "moderate", "source": ["https://securelist.com/equation-the-death-star-of-malware-galaxy/68750/"]},
+    {"from": "Shadow_Brokers", "to": "EternalBlue", "kind": "uses", "instrument": "Lost in Translation dump", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/alerts/2017/05/12/indicators-associated-wannacry-ransomware"]},
+    {"from": "EternalBlue", "to": "dual_use_door", "kind": "dual_use", "instrument": "hoarded 0-day boomerangs as worm", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/alerts/2017/05/12/indicators-associated-wannacry-ransomware"]},
+    {"from": "Lawful_Intercept_CALEA", "to": "got_away", "kind": "got_away", "instrument": "mandated backdoor existed for years before Salt Typhoon made the paradox empirical", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-326a"]},
+    {"from": "Salt_Typhoon", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "public US attribution / advisory", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-326a"]},
+    {"from": "SolarWinds", "to": "SUNBURST", "kind": "route", "instrument": "trojanized Orion update", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-008a"]},
+    {"from": "APT1", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "named 2013 + DOJ 2014", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.justice.gov/opa/pr/us-charges-five-chinese-military-hackers-cyber-espionage-against-us-corporations-and"]},
+    {"from": "Turla", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "Operation MEDUSA 2023", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.justice.gov/opa/pr/us-dismantles-snake-malware-network-operated-russias-fsb-cyber-unit"]},
+    {"from": "Vault7", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "CIA tooling published", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://wikileaks.org/ciav7p1/"]},
+    {"from": "Microsoft", "to": "dual_use_door", "kind": "dual_use", "instrument": "default OS/identity is both shield and target", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.microsoft.com/en-us/security/security-insider"]}
+  ]
+}

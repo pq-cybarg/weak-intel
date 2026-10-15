@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-09-04",
+  "metadata": {
+    "title": "Criminal enterprise, RaaS, IABs, and clear-world adjacency",
+    "layer": "evidenced",
+    "theme": "criminal"
+  },
+  "entities": [
+    {"name": "LockBit", "type": "criminal", "notes": "Ransomware-as-a-service. Multi-year industrial affiliate model. Law-enforcement disruption 2024 (Operation Cronos) did not end the brand.", "capability_tier": "industrial", "source": ["https://www.ncsc.gov.uk/news/lockbit-disrupted"]},
+    {"name": "Conti", "type": "criminal", "notes": "RaaS. 2022 leak of internal chats after Ukraine stance. Successor brands continued the playbook.", "capability_tier": "industrial", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-265a"]},
+    {"name": "ALPHV_BlackCat", "type": "criminal", "notes": "Rust RaaS. Change Healthcare 2024 among public victims. Exit-scam reporting after disruption.", "capability_tier": "industrial", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-353a"]},
+    {"name": "Scattered_Spider", "type": "criminal", "notes": "Social-engineering specialist cluster (helpdesk/MFA bypass) overlapping with ALPHV/RansomHub affiliates in public reporting.", "capability_tier": "commercial", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"]},
+    {"name": "Initial_Access_Brokers", "type": "criminal", "notes": "Market for VPN/Citrix/O365 footholds sold to ransomware affiliates. The criminal analogue of a shared exploit broker.", "capability_tier": "commercial", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-061a"]},
+    {"name": "Bulletproof_Hosting", "type": "criminal", "notes": "Hosting that resists abuse complaints. Shared substrate for C2 of both crime and some APT cutouts (public reporting, graded).", "capability_tier": "commercial", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-277a"]},
+    {"name": "TrickBot", "type": "malware", "notes": "Banking-trojan -> loader/botnet. Conti precursor infrastructure in public reporting.", "source": ["https://attack.mitre.org/software/S0266/"]},
+    {"name": "Emotet", "type": "malware", "notes": "Loader botnet. Law-enforcement takedown 2021; later revival reporting.", "source": ["https://www.europol.europa.eu/media-press/newsroom/news/worlds-most-dangerous-malware-emotet-disrupted-through-global-action"]},
+    {"name": "QakBot", "type": "malware", "notes": "Loader. DOJ/Europol 2023 disruption.", "source": ["https://www.justice.gov/opa/pr/qakbot-malware-disrupted-international-cyber-action"]},
+    {"name": "Cryptocurrency_Mixers", "type": "affiliate", "notes": "Clear-world-facing services used (also) to cash out ransomware. Tornado Cash designation is the public case; not every mixer is criminal.", "source": ["https://home.treasury.gov/news/press-releases/jy0916"]},
+    {"name": "Bulletproof_Registrars", "type": "affiliate", "notes": "Domain/hosting firms that sit in the clear economy while servicing abuse-resistant infrastructure.", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-277a"]}
+  ],
+  "edges": [
+    {"from": "Conti", "to": "TrickBot", "kind": "uses", "instrument": "loader/botnet precursor", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-265a"]},
+    {"from": "LockBit", "to": "Initial_Access_Brokers", "kind": "uses", "instrument": "purchased footholds", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-165a"]},
+    {"from": "ALPHV_BlackCat", "to": "Scattered_Spider", "kind": "affiliates", "instrument": "public overlap reporting (MGM/Caesars era)", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"]},
+    {"from": "Scattered_Spider", "to": "Helpdesk_Identity", "kind": "targets", "instrument": "social engineering of identity/helpdesk", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"]},
+    {"from": "LockBit", "to": "Cryptocurrency_Mixers", "kind": "uses", "instrument": "cash-out", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.ic3.gov/Media/Y2024/PSA240419"]},
+    {"from": "Initial_Access_Brokers", "to": "Edge_VPN", "kind": "exploits", "instrument": "sold access to unpatched VPN/Citrix", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-061a"]},
+    {"from": "LockBit", "to": "Bulletproof_Hosting", "kind": "uses", "instrument": "C2/leak site hosting", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.ncsc.gov.uk/news/lockbit-disrupted"]},
+    {"from": "Emotet", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "2021 global disruption", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.europol.europa.eu/media-press/newsroom/news/worlds-most-dangerous-malware-emotet-disrupted-through-global-action"]},
+    {"from": "LockBit", "to": "got_away", "kind": "got_away", "instrument": "brand survived 2024 disruption via affiliates", "confidence": "moderate", "status": "public-record", "grade": "moderate", "notes": "Infrastructure seizure != ecosystem death.", "source": ["https://www.ncsc.gov.uk/news/lockbit-disrupted"]}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "as_of": "2026-09-07",
+  "metadata": {
+    "title": "Palantir's defense/intel product lines",
+    "layer": "evidenced",
+    "theme": "intel"
+  },
+  "notes": "Ported from bubble-map Palantir deep-dive, defense/intel slice only (the civilian-agency Foundry fusion - IRS/SSA/CMS/NHS - belongs to the other map's digital-ID theme). Deepens the existing Palantir node into its actual programs.",
+  "entities": [
+    {"name": "Palantir_Gotham", "type": "capability", "notes": "The intelligence/defense data-fusion platform. Won a competition vs the Army's DCGS-A; reported in use for battlefield/targeting data in Ukraine (operational specifics contested).", "source": ["https://www.palantir.com/platforms/gotham/"]},
+    {"name": "Palantir_AIP", "type": "capability", "notes": "Artificial Intelligence Platform (2023+) wiring commercial LLMs onto Gotham/Foundry. AIP Bootcamps drove Palantir's US commercial surge.", "source": ["https://www.palantir.com/platforms/aip/"]},
+    {"name": "Maven_Smart_System", "type": "capability", "notes": "Palantir's AI targeting/data-fusion successor to Project Maven (DoD, 2017). May 2024 $480M Army prototype expanded to a ~$1.3B ceiling through 2029; fielded across services and combatant commands, and into NATO command.", "source": ["https://www.palantir.com/"]},
+    {"name": "TITAN", "type": "capability", "notes": "Tactical Intelligence Targeting Access Node - Army ground station Palantir is prime on. Sensor-to-shooter data fusion, hardware+software at the tactical edge.", "source": ["https://www.palantir.com/"]},
+    {"name": "US_Army", "type": "agency", "notes": "Primary US ground-force customer for Palantir (Gotham/Vantage/NGC2), Maven Smart System, and TITAN.", "source": ["https://www.army.mil/"]},
+    {"name": "OpenAI", "type": "vendor", "notes": "Commercial LLM provider whose models integrate into Palantir AIP (via model partners) - the LLM layer bolted onto the defense-fusion stack.", "source": ["https://openai.com/"]}
+  ],
+  "edges": [
+    {"from": "Palantir", "to": "Palantir_Gotham", "kind": "has_capability", "instrument": "product line", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.palantir.com/platforms/gotham/"]},
+    {"from": "Palantir", "to": "Palantir_AIP", "kind": "has_capability", "instrument": "product line (2023+)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.palantir.com/platforms/aip/"]},
+    {"from": "Palantir", "to": "Maven_Smart_System", "kind": "has_capability", "instrument": "prime contractor", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.palantir.com/"]},
+    {"from": "Palantir", "to": "TITAN", "kind": "has_capability", "instrument": "prime contractor", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.palantir.com/"]},
+    {"from": "Maven_Smart_System", "to": "US_Army", "kind": "affiliates", "instrument": "Army Contracting Command (Aberdeen)", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.palantir.com/"]},
+    {"from": "TITAN", "to": "US_Army", "kind": "affiliates", "instrument": "Army ground station program", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.palantir.com/"]},
+    {"from": "Palantir_Gotham", "to": "Ukraine", "kind": "affiliates", "instrument": "reported battlefield/targeting use", "confidence": "moderate", "status": "public-record", "grade": "moderate", "notes": "Deployment reported; operational specifics contested.", "source": ["https://www.palantir.com/platforms/gotham/"]},
+    {"from": "Palantir_AIP", "to": "OpenAI", "kind": "uses", "instrument": "LLM integration via model partners", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.palantir.com/platforms/aip/"]}
+  ]
+}

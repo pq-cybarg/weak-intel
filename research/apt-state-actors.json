@@ -1,0 +1,36 @@
+{
+  "as_of": "2026-09-04",
+  "metadata": {
+    "title": "State APT clusters, public attribution, recurring systems",
+    "layer": "evidenced",
+    "theme": "apt"
+  },
+  "entities": [
+    {"name": "APT28_FancyBear", "type": "apt", "notes": "GRU-attributed cluster (US/UK/allied public attribution). Election interference, NATO/gov spearphish. MITRE G0007.", "capability_tier": "industrial", "source": ["https://attack.mitre.org/groups/G0007/"]},
+    {"name": "APT29_CozyBear", "type": "apt", "notes": "SVR-attributed cluster. SolarWinds-adjacent tradecraft in public reporting. MITRE G0016.", "capability_tier": "industrial", "source": ["https://attack.mitre.org/groups/G0016/"]},
+    {"name": "Sandworm", "type": "apt", "notes": "GRU Unit 74455 public attribution. Ukraine power, NotPetya. MITRE G0034.", "capability_tier": "industrial", "source": ["https://attack.mitre.org/groups/G0034/"]},
+    {"name": "Volt_Typhoon", "type": "apt", "notes": "PRC-attributed living-off-the-land against US critical infrastructure (CISA).", "capability_tier": "industrial", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a"]},
+    {"name": "Salt_Typhoon", "type": "apt", "notes": "PRC-attributed telecom interception campaign (US public statements 2024-2025).", "capability_tier": "industrial", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-326a"]},
+    {"name": "APT41", "type": "apt", "notes": "PRC cluster mixing suspected state tasking with financially motivated ops. MITRE G0096.", "capability_tier": "industrial", "source": ["https://attack.mitre.org/groups/G0096/"]},
+    {"name": "Lazarus_Group", "type": "apt", "notes": "DPRK-attributed. SWIFT, crypto-exchange, ransomware-adjacent. MITRE G0032.", "capability_tier": "industrial", "source": ["https://attack.mitre.org/groups/G0032/"]},
+    {"name": "Kimsuky", "type": "apt", "notes": "DPRK espionage cluster. MITRE G0094.", "capability_tier": "commercial", "source": ["https://attack.mitre.org/groups/G0094/"]},
+    {"name": "APT33_Elfin", "type": "apt", "notes": "Iran-attributed. Energy/aviation. MITRE G0064.", "capability_tier": "commercial", "source": ["https://attack.mitre.org/groups/G0064/"]},
+    {"name": "Equation_Group", "type": "apt", "notes": "Public reporting (Kaspersky, Shadow Brokers leak) associates this implant set with NSA-grade tooling. Not a courtroom finding.", "capability_tier": "industrial", "source": ["https://securelist.com/equation-the-death-star-of-malware-galaxy/68750/"]},
+    {"name": "GRU", "type": "agency", "notes": "Russian military intelligence. Public US/UK attributions for APT28/Sandworm.", "source": ["https://www.justice.gov/opa/pr/us-charges-russian-gru-officers-international-hacking-and-related-influence-and"]},
+    {"name": "SVR", "type": "agency", "notes": "Russian foreign intelligence. Public attribution for APT29.", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-008a"]},
+    {"name": "MSS", "type": "agency", "notes": "PRC Ministry of State Security. Named in multiple US indictments of APT operators.", "source": ["https://www.justice.gov/opa/pr/seven-international-cyber-defendants-including-apt41-actors-charged-connection"]},
+    {"name": "PLA_Strategic_Support", "type": "agency", "notes": "PLA cyber/electronic warfare lineage (public org charts; 2024 PLA reorg reporting).", "source": ["https://attack.mitre.org/groups/G0027/"]},
+    {"name": "RGB", "type": "agency", "notes": "DPRK Reconnaissance General Bureau. Public UN/US attribution for Lazarus.", "source": ["https://www.un.org/securitycouncil/sanctions/1718/panel_experts/reports"]}
+  ],
+  "edges": [
+    {"from": "APT28_FancyBear", "to": "GRU", "kind": "attributed_to", "instrument": "US/UK public attribution", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://attack.mitre.org/groups/G0007/"]},
+    {"from": "Sandworm", "to": "GRU", "kind": "attributed_to", "instrument": "US indictment Unit 74455", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.justice.gov/opa/pr/six-russian-gru-officers-charged-connection-worldwide-deployment"]},
+    {"from": "APT29_CozyBear", "to": "SVR", "kind": "attributed_to", "instrument": "US/UK public attribution", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-008a"]},
+    {"from": "Volt_Typhoon", "to": "MSS", "kind": "attributed_to", "instrument": "CISA PRC attribution (cluster)", "confidence": "moderate", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a"]},
+    {"from": "Salt_Typhoon", "to": "MSS", "kind": "attributed_to", "instrument": "US public telecom-espionage attribution", "confidence": "moderate", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-326a"]},
+    {"from": "APT41", "to": "MSS", "kind": "attributed_to", "instrument": "DOJ APT41 charges", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.justice.gov/opa/pr/seven-international-cyber-defendants-including-apt41-actors-charged-connection"]},
+    {"from": "Lazarus_Group", "to": "RGB", "kind": "attributed_to", "instrument": "UN/US DPRK attribution", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://attack.mitre.org/groups/G0032/"]},
+    {"from": "Kimsuky", "to": "RGB", "kind": "attributed_to", "instrument": "public DPRK espionage attribution", "confidence": "moderate", "status": "public-record", "grade": "strong", "source": ["https://attack.mitre.org/groups/G0094/"]},
+    {"from": "Equation_Group", "to": "NSA", "kind": "attributed_to", "instrument": "Kaspersky Equation + Shadow Brokers public association", "confidence": "moderate", "status": "alleged", "grade": "moderate", "notes": "Public technical association, not a criminal conviction of the agency.", "source": ["https://securelist.com/equation-the-death-star-of-malware-galaxy/68750/"]}
+  ]
+}

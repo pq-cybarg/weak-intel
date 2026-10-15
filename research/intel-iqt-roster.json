@@ -1,0 +1,3089 @@
+{
+  "as_of": "2026-09-05",
+  "metadata": {
+    "title": "In-Q-Tel public roster (Wikipedia + Intercept + Dealroom + TipRanks)",
+    "layer": "evidenced",
+    "theme": "intel",
+    "roster_count": 146,
+    "caveat": "WaPo 2016: 100+ IQT investments were secret. This is not the classified remainder."
+  },
+  "entities": [
+    {
+      "name": "In_Q_Tel",
+      "type": "affiliate",
+      "notes": "CIA-chartered nonprofit VC. Washington Post 2016: 325 listed investments, 100+ secret. This roster is the public remainder compiled from Wikipedia, Intercept (2016), Dealroom, TipRanks, Gaebler \u2014 not the classified set.",
+      "source": [
+        "https://www.iqt.org/",
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "3VR",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (gaebler): video intelligence. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "name": "A4Vision",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): 3D facial imaging. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Adapx",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): Microsoft Office and GIS. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Advanced_Navigation",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (gaebler): inertial nav. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Agent_Logic",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): event detection. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Aira_Technologies",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (gaebler): industrial AI. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Alfalight",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (gaebler): photonics. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Algorithmic",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): AI/ML deploy infrastructure. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Anduril",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): defense autonomy (third-party holding list). Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Anomali",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): threat intel platform (Anomali). Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Apigee",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (gaebler): API gateway. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Aquifi",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): 3D vision. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "ArcSight",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): SIEM. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Armadin",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (tipranks): security 2026. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "name": "Attensity",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): text analytics. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Authentica",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): secure messaging. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Basis_Technology",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): multilingual NLP / cyber forensics. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Bay_Microsystems",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): packet processing. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Beartooth",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): decentralized mobile network. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Biomatrica",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (gaebler): sample stabilization. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "name": "BlueLine_Grid",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (gaebler): first-responder comms. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Bounce_Imaging",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (gaebler): tactical cameras. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Boundless_Spatial",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): geospatial; later Planet Labs. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "CallMiner",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): speech analytics. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Cambrios",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (gaebler): nanomaterials. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Carnegie_Speech",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): speech recognition. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Cassatt",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): desktop software. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Cerebras",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): wafer-scale AI chips. Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Cigent_Technology",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (gaebler): endpoint data protection. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "name": "CliQr",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): hybrid cloud. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "CloudPassage",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): infrastructure security. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Cloudera",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): big data. Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Cohesity",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): data security. Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Colossal_Biosciences",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): de-extinction / bioscience. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Connectify",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): wifi/VPN. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Convera",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): search. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "D2iQ",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): datacenter automation. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "D_Wave",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dakota): quantum annealing; IQT 2012 reporting. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.dakota.com/resources/blog/top-10-iqt-portfolio-companies-2025"
+      ]
+    },
+    {
+      "name": "DataRobot",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): AutoML. Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Databricks",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): big-data analytics; lakehouse. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Dataminr",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): social-media situational awareness. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Deepgram",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (tipranks): speech AI 2026. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "name": "Destineer",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): training simulation. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Digital_Reasoning",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): Synthesys. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Docker",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): containers. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Dreadnode",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): AI offensive security testing. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Echodyne",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): ESA radar. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Emerald_AI",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (tipranks): 2026. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "name": "Endeca",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): search. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Epiq_Solutions",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): software-defined radio. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "FMS",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): IC visualization knowledgebase. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Fetch_Technologies",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): internet data management. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "FireEye",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): malware protection. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Forterra_Systems",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): virtual-world training. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Fuel3D",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): 3D scanning. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "GeoIQ",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): map visualization. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Geofeedia",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): location social monitoring. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Geosemble",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): geospatial unstructured data. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "GetReal_Security",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (tipranks): 2025. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "name": "Groq",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): LPU inference. Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "HEO",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): space imagery. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "HavocAI",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (tipranks): maritime autonomy 2025. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "name": "Headspin",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): mobile app performance. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Huddle",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): content collaboration. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "ICEYE",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): SAR satellites. Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Infleqtion",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): quantum sensing / ColdQuanta. Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Initiate_Systems",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): real-time multi-database. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Inktomi",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): network infrastructure. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "InnoCentive",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): crowdsourcing. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Intel",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): semiconductors (holding list; not a startup cheque). Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Intelliseek",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): search. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Interset",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): insider threat analytics. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Inxight",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): search. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "JetCool",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): data-center liquid cooling. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Keyhole",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (iqt): Google Earth predecessor. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.iqt.org/"
+      ]
+    },
+    {
+      "name": "Keyssa",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): contactless data transfer. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Kymeta",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): satellite antennas. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Lambda",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): GPU cloud. Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Language_Weaver",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): machine translation. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Lingotek",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): translation. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Looking_Glass_Factory",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): holography. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Lookout",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): mobile cybersecurity. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Magnet_Forensics",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): digital forensics (Magnet). Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Mapbox",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): maps. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Mariana_Minerals",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (tipranks): mining 2026. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "name": "MemSQL",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): in-memory SQL (SingleStore). Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "MetaCarta",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): geo search. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Nervana",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): ML platform (Intel-acquired). Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "NetApp",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): Decru storage encryption. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "NovoDynamics",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): Arabic OCR. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Nozomi_Networks",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): OT/IoT security; OT security Series E 2025. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Oculis_Labs",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): visual cyber security. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Orbital_Insight",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): satellite imagery analytics. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Orion_Labs",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): wearable voice. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "PATHAR",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): social analytics. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Palantir",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (iqt): early seed. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.iqt.org/"
+      ]
+    },
+    {
+      "name": "Parallel_Wireless",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): LTE small cells. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Phoenix_Tailings",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): rare earths from tailings. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "PiXlogic",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): visual search. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Platfora",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): big-data viz. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Pneubotics",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): mobile material handling. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "PsiKick",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): ultra-low-power sensors. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "PubNub",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): realtime apps. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Pure_Storage",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): flash storage. Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Quantum4D",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): visualization. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Recorded_Future",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): web intel. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "RevEng_AI",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (tipranks): reverse-engineering AI 2026. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "name": "ReversingLabs",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): malware analysis. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Rigetti",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): superconducting quantum. Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Rocket_Lab",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): smallsat launch. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "SRD",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): identity resolution. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "SafeWeb",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): browsing privacy (closed 2001). Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Sayari",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): financial intel / corporate ownership. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Sila",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): battery materials. Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Silver_Tail_Systems",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): website fraud. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Skincential_Sciences",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): sample collection. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Socrata",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): open data. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Soft_Robotics",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): soft actuators. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Sonatype",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): software supply-chain security. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Spaceflight_Industries",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): smallsat launch/imagery. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Spotfire",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): viz analytics. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Starcloud",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): data centers in space. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Stoke_Space",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): reusable rocket. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Stratify",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): mass-data organization. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Substrate",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (reuters): disclosed 2025 backer. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.reuters.com/world/asia-pacific/us-startup-substrate-announces-chipmaking-tool-that-it-says-will-rival-asml-2025-10-28/"
+      ]
+    },
+    {
+      "name": "TRX_Systems",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): indoor location. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Tacit_Knowledge_Systems",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): internal knowledge. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Tenable",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (dealroom): vuln management. Capital adjacency, not operational control.",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "name": "Teradici",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): desktop virtualization. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "TerraGo",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): GeoPDF. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Traction_Software",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): web 2.0. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "TransVoyant",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): live predictive intel. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Transient_Electronics",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): dissolvable semiconductors. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "Twenty",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (tipranks): network security 2025. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "name": "Tyfone",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): mobile/cloud/IoT security. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Visible_Technologies",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): social media monitoring. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Visual_Sciences",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): real-time viz. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Voltaiq",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): battery analytics. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "VulnCheck",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (tipranks): exploit intel Series B 2026. Capital adjacency, not operational control.",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "name": "Wickr",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): encrypted messaging. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Xanadu",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): photonic quantum. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Xarion_Laser_Acoustics",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): ultrasonic imaging. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Zaplet",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): email. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "name": "Zoomdata",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): big-data viz. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "goTenna",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (intercept): off-grid comms. Capital adjacency, not operational control.",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "name": "zSpace",
+      "type": "vendor",
+      "bucket": "clear",
+      "notes": "Public IQT roster (wiki): holographic displays. Capital adjacency, not operational control.",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "In_Q_Tel",
+      "to": "3VR",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (gaebler)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "A4Vision",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Adapx",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Advanced_Navigation",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (gaebler)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Agent_Logic",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Aira_Technologies",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (gaebler)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Alfalight",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (gaebler)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Algorithmic",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Anduril",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Anomali",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Apigee",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (gaebler)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Aquifi",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "ArcSight",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Armadin",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (tipranks)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Attensity",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Authentica",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Basis_Technology",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Bay_Microsystems",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Beartooth",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Biomatrica",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (gaebler)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "BlueLine_Grid",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (gaebler)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Bounce_Imaging",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (gaebler)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Boundless_Spatial",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "CallMiner",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Cambrios",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (gaebler)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Carnegie_Speech",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Cassatt",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Cerebras",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Cigent_Technology",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (gaebler)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.gaebler.com/VC-Investors-E9E74B4B-3244-4B97-8A57-32F9C7CAFE0B-In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "CliQr",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "CloudPassage",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Cloudera",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Cohesity",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Colossal_Biosciences",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Connectify",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Convera",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "D2iQ",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "D_Wave",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dakota)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.dakota.com/resources/blog/top-10-iqt-portfolio-companies-2025"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "DataRobot",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Databricks",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Dataminr",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Deepgram",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (tipranks)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Destineer",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Digital_Reasoning",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Docker",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Dreadnode",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Echodyne",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Emerald_AI",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (tipranks)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Endeca",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Epiq_Solutions",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "FMS",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Fetch_Technologies",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "FireEye",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Forterra_Systems",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Fuel3D",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "GeoIQ",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Geofeedia",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Geosemble",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "GetReal_Security",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (tipranks)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Groq",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "HEO",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "HavocAI",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (tipranks)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Headspin",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Huddle",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "ICEYE",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Infleqtion",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Initiate_Systems",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Inktomi",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "InnoCentive",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Intel",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Intelliseek",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Interset",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Inxight",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "JetCool",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Keyhole",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (iqt)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "fact",
+      "source": [
+        "https://www.iqt.org/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Keyssa",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Kymeta",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Lambda",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Language_Weaver",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Lingotek",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Looking_Glass_Factory",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Lookout",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Magnet_Forensics",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Mapbox",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Mariana_Minerals",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (tipranks)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "MemSQL",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "MetaCarta",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Nervana",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "NetApp",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "NovoDynamics",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Nozomi_Networks",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Oculis_Labs",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Orbital_Insight",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Orion_Labs",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "PATHAR",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Palantir",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (iqt)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "fact",
+      "source": [
+        "https://www.iqt.org/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Parallel_Wireless",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Phoenix_Tailings",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "PiXlogic",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Platfora",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Pneubotics",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "PsiKick",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "PubNub",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Pure_Storage",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Quantum4D",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Recorded_Future",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "RevEng_AI",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (tipranks)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "ReversingLabs",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Rigetti",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Rocket_Lab",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "SRD",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "SafeWeb",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Sayari",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Sila",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Silver_Tail_Systems",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Skincential_Sciences",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Socrata",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Soft_Robotics",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Sonatype",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Spaceflight_Industries",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Spotfire",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Starcloud",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Stoke_Space",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Stratify",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Substrate",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (reuters)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://www.reuters.com/world/asia-pacific/us-startup-substrate-announces-chipmaking-tool-that-it-says-will-rival-asml-2025-10-28/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "TRX_Systems",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Tacit_Knowledge_Systems",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Tenable",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (dealroom)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://dealroom.co/investors/in-q-tel/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Teradici",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "TerraGo",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Traction_Software",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "TransVoyant",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Transient_Electronics",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Twenty",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (tipranks)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Tyfone",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Visible_Technologies",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Visual_Sciences",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Voltaiq",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "VulnCheck",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (tipranks)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://www.tipranks.com/private-companies/investor/in-q-tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Wickr",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Xanadu",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Xarion_Laser_Acoustics",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Zaplet",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "Zoomdata",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "goTenna",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (intercept)",
+      "confidence": "high",
+      "status": "public-record",
+      "grade": "strong",
+      "source": [
+        "https://theintercept.com/2016/04/14/in-undisclosed-cia-investments-social-media-mining-looms-large/"
+      ]
+    },
+    {
+      "from": "In_Q_Tel",
+      "to": "zSpace",
+      "kind": "affiliates",
+      "instrument": "public IQT roster (wiki)",
+      "confidence": "moderate",
+      "status": "public-record",
+      "grade": "moderate",
+      "source": [
+        "https://en.wikipedia.org/wiki/In-Q-Tel"
+      ]
+    }
+  ]
+}

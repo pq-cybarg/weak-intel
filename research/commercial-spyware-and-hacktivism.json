@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-09-04",
+  "metadata": {
+    "title": "Commercial spyware vs device forensics; hacktivism and leaks",
+    "layer": "evidenced",
+    "theme": "intel"
+  },
+  "entities": [
+    {"name": "NSO_Group", "type": "vendor", "notes": "Pegasus. Entity List. Mercenary zero-click. Unit 8200 alumni reporting.", "capability_tier": "industrial", "source": ["https://citizenlab.ca/2021/07/the-pegasus-project/"]},
+    {"name": "Intellexa", "type": "vendor", "notes": "Predator/Cytrox. OFAC 2024; later reporting of designations reversed for some figures (2025) - enforcement-reversal pattern.", "capability_tier": "industrial", "source": ["https://home.treasury.gov/news/press-releases/jy2140"]},
+    {"name": "Paragon", "type": "vendor", "notes": "Graphite. Citizen Lab 2025 Italy journalist targeting. AE Industrial / US-friendly framing.", "capability_tier": "commercial", "source": ["https://citizenlab.ca/"]},
+    {"name": "Cellebrite", "type": "vendor", "notes": "UFED. Physical-custody extraction, not covert implant. Distinct legal/technical class.", "capability_tier": "commercial", "source": ["https://www.cellebrite.com/"]},
+    {"name": "Circles_SS7", "type": "vendor", "notes": "SS7 location/intercept, no implant. Citizen Lab 2020: 25 government customers.", "capability_tier": "commercial", "source": ["https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/"]},
+    {"name": "Anonymous", "type": "criminal", "notes": "A banner, not an org. DDoS/doxxing under a name anyone can fly.", "capability_tier": "artisan", "source": ["https://www.justice.gov/"]},
+    {"name": "WikiLeaks", "type": "affiliate", "notes": "Vault 7 CIA dump (2017). Distinct from APT attribution of 2016 DNC emails (contested routing).", "source": ["https://wikileaks.org/ciav7p1/"]},
+    {"name": "LAPSUS", "type": "criminal", "notes": "Helpdesk vishing / MFA-fatigue. Microsoft, Okta, NVIDIA, Uber. CSRB case study. Lineage into The Com / Scattered Spider.", "capability_tier": "artisan", "source": ["https://www.cisa.gov/sites/default/files/2023-08/CSRB_Lapsus%24_508c.pdf"]},
+    {"name": "Cl0p", "type": "criminal", "notes": "TA505. MOVEit 2023 mass data-extortion without always encrypting.", "capability_tier": "industrial", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158a"]},
+    {"name": "DarkSide", "type": "criminal", "notes": "Colonial Pipeline 2021. DOJ clawback of part of the Bitcoin ransom - seizable rails.", "capability_tier": "commercial", "source": ["https://www.justice.gov/opa/pr/department-justice-seizes-23-million-cryptocurrency-paid-ransomware-extortionists-darkside"]},
+    {"name": "Palantir", "type": "vendor", "notes": "Gotham / foundry analytics. CIA-seeded public history. Clear-world data platform used by governments.", "source": ["https://www.palantir.com/"]},
+    {"name": "Clearview_AI", "type": "vendor", "notes": "Face search from scraped web images sold to police/agencies. Civil-liberties litigation public.", "source": ["https://www.clearview.ai/"]}
+  ],
+  "edges": [
+    {"from": "NSO_Group", "to": "Mobile_Spyware", "kind": "uses", "instrument": "Pegasus product class", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://citizenlab.ca/2021/07/the-pegasus-project/"]},
+    {"from": "Circles_SS7", "to": "SS7_Interception", "kind": "uses", "instrument": "product", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/"]},
+    {"from": "Cellebrite", "to": "Mobile_Messaging", "kind": "protects", "instrument": "lawful extraction after custody (not covert)", "confidence": "moderate", "status": "public-record", "grade": "moderate", "notes": "Protector-for-police; misuse is a separate graded debate.", "source": ["https://www.cellebrite.com/"]},
+    {"from": "LAPSUS", "to": "Helpdesk_Identity", "kind": "targets", "instrument": "vishing", "confidence": "high", "status": "public-record", "grade": "strong", "source": ["https://www.cisa.gov/sites/default/files/2023-08/CSRB_Lapsus%24_508c.pdf"]},
+    {"from": "LAPSUS", "to": "Scattered_Spider", "kind": "affiliates", "instrument": "The Com lineage (public reporting)", "confidence": "moderate", "status": "public-record", "grade": "moderate", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"]},
+    {"from": "WikiLeaks", "to": "Vault7", "kind": "authored", "instrument": "publication", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://wikileaks.org/ciav7p1/"]},
+    {"from": "DarkSide", "to": "did_not_get_away", "kind": "did_not_get_away", "instrument": "DOJ ransom clawback", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.justice.gov/opa/pr/department-justice-seizes-23-million-cryptocurrency-paid-ransomware-extortionists-darkside"]},
+    {"from": "Cl0p", "to": "MOVEit_Transfer", "kind": "targets", "instrument": "2023 mass extortion", "confidence": "high", "status": "public-record", "grade": "fact", "source": ["https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158a"]},
+    {"from": "Palantir", "to": "Clearview_AI", "kind": "affiliates", "instrument": "stacked in public ICE-tooling reporting (graded adjacency)", "confidence": "low", "status": "public-record", "grade": "weak", "source": ["https://www.palantir.com/"]}
+  ]
+}
