@@ -4,7 +4,7 @@
     "title": "CRQC supply chain: fabs, lithography, cryogenics, helium-3, rare earths, miners",
     "layer": "evidenced",
     "theme": "quantum",
-    "imported_from": "earnings-bubble geopolitics-chip-chokepoint-war + macro-critical-minerals + spec-quantum manufacturing chokepoint"
+    "imported_from": "bubble-map geopolitics-chip-chokepoint-war + macro-critical-minerals + spec-quantum manufacturing chokepoint"
   },
   "entities": [
     {"name": "GlobalFoundries", "type": "vendor", "notes": "Makes PsiQuantum Omega silicon-photonic chipset on 300mm wafers in New York. Quantum runs through classical fab chokepoints.", "source": ["https://thequantuminsider.com/2025/09/10/psiquantum-raises-1-billion-to-build-million-qubit-scale-fault-tolerant-quantum-computers/"]},

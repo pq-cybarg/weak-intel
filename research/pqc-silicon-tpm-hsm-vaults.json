@@ -4,7 +4,7 @@
     "title": "PQC silicon, TPMs, secure elements, HSMs and post-quantum vaults",
     "layer": "evidenced",
     "theme": "quantum",
-    "imported_from": "earnings-bubble macro-pqc-chips + fin-sealsq-wisekey-global"
+    "imported_from": "bubble-map macro-pqc-chips + fin-sealsq-wisekey-global"
   },
   "entities": [
     {"name": "Infineon", "type": "vendor", "notes": "SLC27 security controller. CC-certified ML-KEM/ML-DSA. Incumbent secure-element first-mover.", "source": ["https://www.infineon.com/promo/postquantumcryptography"]},

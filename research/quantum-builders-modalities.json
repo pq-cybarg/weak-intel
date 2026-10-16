@@ -4,7 +4,7 @@
     "title": "CRQC is not one machine: modalities, builders, state programs",
     "layer": "evidenced",
     "theme": "quantum",
-    "imported_from": "earnings-bubble spec-quantum-computing-competitive-landscape + macro-quantum-computing"
+    "imported_from": "bubble-map spec-quantum-computing-competitive-landscape + macro-quantum-computing"
   },
   "entities": [
     {"name": "Modality_Superconducting", "type": "method", "notes": "Transmon qubits. Fast gates, short coherence, millikelvin dilution fridges. IBM, Google, Rigetti, IQM, Fujitsu, USTC Zuchongzhi, Origin Quantum.", "source": ["https://thequantuminsider.com/2026/03/26/leading-quantum-computing-countries/"]},

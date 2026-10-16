@@ -1,6 +1,6 @@
 # weak.intel — a dual-use map of the cyber / operator landscape
 
-The earnings-bubble analogue for cryptography, APTs, crime, protectors, intelligence
+The bubble-map analogue for cryptography, APTs, crime, protectors, intelligence
 facilities, malware classes, blue-team controls, and cryptographically relevant
 quantum computers.
 

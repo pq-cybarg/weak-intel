@@ -184,7 +184,7 @@ def build_index(g):
   </ol>
   <p><a href="bubblemap.html">Open the bubble map</a> · <a href="methodology.html">How this is graded</a></p>
   <div class="foot">Public records only. Opinion and analysis, not allegations of criminal conduct.
-  See methodology. Analog of earnings-bubble for the operator landscape.</div>
+  See methodology. Analog of bubble-map for the operator landscape.</div>
 </div>"""
     write("index.html", "Home", body, "Home")
 
@@ -266,7 +266,7 @@ def build_methodology():
 <div class="wrap">
   <div class="kicker">Methodology</div>
   <h1>Proven, evidenced, speculative</h1>
-  <p>Copied in spirit from earnings-bubble: the interesting claims are the ones you can run.</p>
+  <p>Copied in spirit from bubble-map: the interesting claims are the ones you can run.</p>
   <h2>Layers</h2>
   <ul>
     <li><b>Proven</b> — Z3 SAT/UNSAT, TLA+ invariant violation, Alloy instance, graph SCC. No named person is “proven guilty.” What is proven is structure: dual-use doors, leak cascades, CRQC vs RSA.</li>

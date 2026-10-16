@@ -3,7 +3,7 @@
 set -uo pipefail
 cd "$(dirname "$0")"
 if [ -x .venv/bin/python3 ]; then PATH="$(pwd)/.venv/bin:$PATH"; fi
-JAVA="${JAVA:-$(command -v java || echo /Applications/Android\ Studio.app/Contents/jbr/Contents/Home/bin/java)}"
+JAVA="${JAVA:-$(command -v java || true)}"
 hr(){ printf '\n\033[1m%s\033[0m\n%s\n' "$1" "============================================================"; }
 
 hr "[1] Canonical dual-use graph"
@@ -31,13 +31,13 @@ if [ ! -f models/tla/tla2tools.jar ]; then
   curl -fsSL -o models/tla/tla2tools.jar \
     https://github.com/tlaplus/tlaplus/releases/latest/download/tla2tools.jar || true
 fi
-if [ -f models/tla/tla2tools.jar ]; then
+if [ -n "${JAVA:-}" ] && [ -f models/tla/tla2tools.jar ]; then
   ( cd models/tla
     echo "--- Inv_NoCascade (expect VIOLATED) ---"
     "$JAVA" -cp tla2tools.jar tlc2.TLC -config cascade.cfg LeakCascade.tla 2>&1 \
       | grep -E 'Error: Invariant|states generated|No error' | head -20 )
 else
-  echo "tla2tools.jar missing — skip"
+  printf '%s\n' "TLA+ skipped (need java + tla2tools.jar)"
 fi
 
 hr "[8] Alloy dual-use (optional)"
@@ -46,12 +46,12 @@ if [ ! -f models/alloy/alloy.jar ]; then
   curl -fsSL -o models/alloy/alloy.jar \
     https://github.com/AlloyTools/org.alloytools.alloy/releases/download/v6.2.0/org.alloytools.alloy.dist.jar || true
 fi
-if [ -f models/alloy/alloy.jar ]; then
+if [ -n "${JAVA:-}" ] && [ -f models/alloy/alloy.jar ]; then
   ( cd models/alloy
     [ -f RunAlloy.class ] || "${JAVA%java}javac" -cp alloy.jar RunAlloy.java
     "$JAVA" -cp "alloy.jar:." RunAlloy DualUse.als 2>&1 | grep -E '===|command|instance' | head -20 )
 else
-  echo "alloy.jar missing — skip"
+  printf '%s\n' "Alloy skipped (need java + alloy.jar)"
 fi
 
 echo

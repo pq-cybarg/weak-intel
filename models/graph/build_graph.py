@@ -48,7 +48,7 @@ BUCKET_OF = {
 
 # Headline core = SCC over ATTACK/DOOR edges only (bubble-map's "financial layer").
 # Mixing affiliation/capability edges into "the core" is the composition fallacy
-# the earnings-bubble graph forbids.
+# the bubble-map graph forbids.
 ATTACK = {"targets", "exploits", "route", "harvests", "dual_use"}
 CAPABILITY = {"uses", "has_capability"}
 OVERLAY = {

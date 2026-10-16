@@ -4,7 +4,7 @@
     "title": "Expanded actors: APTs, eCrime victims, spyware vendors, hacktivism (from bubble-map catalogs)",
     "layer": "evidenced",
     "theme": "apt",
-    "imported_from": "earnings-bubble spec-state-apt-catalog, spec-ransomware-ecrime-catalog, spec-spyware-vendor-catalog, spec-hacktivist-catalog"
+    "imported_from": "bubble-map spec-state-apt-catalog, spec-ransomware-ecrime-catalog, spec-spyware-vendor-catalog, spec-hacktivist-catalog"
   },
   "entities": [
     {"name": "APT35_Charming_Kitten", "type": "apt", "notes": "IRGC-linked. Credential phishing of journalists, academics, dissidents, election-adjacent targets.", "capability_tier": "commercial", "source": ["https://attack.mitre.org/groups/G0059/"]},

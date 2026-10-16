@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-crqc_unwind.py — CRQC as the forcing event (earnings-bubble's 'capital tap' analogue).
+crqc_unwind.py — CRQC as the forcing event (bubble-map's 'capital tap' analogue).
 
 Q1  HNDL: recorded RSA ciphertext decryptable given CRQC     SAT
 Q2  'RSA confidentiality holds after CRQC'                   UNSAT
